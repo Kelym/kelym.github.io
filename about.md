@@ -4,15 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi, I am Liyiming Ke, or "Kay". I am a grad student at University of Washington. I am passionate about Machine Learning, especially Reinforcement Learning and Vision, and almost everything in Artificial Intelligence or Applied ML.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This blog is inspired by [Seita's Place](https://danieltakeshi.github.io/) and [colah's blog](https://colah.github.io/). It is created on Sep 2017 when I entered grad school. I hope to share my journey in Machine Learning and to splash my random thoughts here. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+You can reach me at ```kayke@cs.washington.edu```
 
+![Kay in Seattle, Washington. Sep 2017](https://kelym.github.io/assets/k.jpg)
 
-[jekyll-organization]: https://github.com/jekyll
+​	
