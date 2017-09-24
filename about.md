@@ -10,6 +10,8 @@ This blog is inspired by [Seita's Place](https://danieltakeshi.github.io/) and [
 
 You can reach me at ```kayke@cs.washington.edu```
 
-![Kay in Seattle, Washington. Sep 2017](https://kelym.github.io/assets/k.jpg)
+
+
+![Kay in Seattle, Washington. Sep 2017]({{site.url}}/{{site.baseurl}}/assets/k.jpg){:height="300" .center-image }
 
 ​	
