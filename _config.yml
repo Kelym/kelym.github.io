@@ -21,8 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 logo: 
 search:
 encoding:
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://kelym.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kelym.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: xkelym
 github_username:  Kelym
 
@@ -35,6 +35,10 @@ plugins:
 # Disque Comment with built in support from minima
 disqus:
   shortname: kayke
+
+# Customize
+permalink: /:year/:month/:day/:title.html   #博文的固定链接
+#paginate: 15                                #分页时每页博文数量
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
