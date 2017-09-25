@@ -12,6 +12,6 @@ You can reach me at ```kayke@cs.washington.edu```
 
 
 
-![Kay in Seattle, Washington. Sep 2017]({{site.url}}/{{site.baseurl}}/assets/k.jpg){:height="300" .center-image }
+![Kay in Seattle, Washington. Sep 2017]({{site.url}}/{{site.baseurl}}/assets/k.jpg){:height="300" .center-image }*Kay in Seattle, Washington. Sep 2017*
 
 ​	
