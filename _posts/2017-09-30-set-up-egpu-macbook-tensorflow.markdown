@@ -1,6 +1,11 @@
-# Set up MacBook with GTX1080Ti
+---
+layout: post
+title: Set Up Macbook with GTX1080Ti and Tensorflow
+date: 2017-09-27 10:11:11.000000000 +09:00
+tags: tensorflow ml gpu setup
+---
 
-**TL;DR** Step-by-step guide on setting up 2017 Macbook Pro + GTX 1080 Ti + tensorflow w/ gpu support. 
+**TL;DR** Verbose guide on setting up 2017 Macbook Pro 2.3GHz i5 + GTX 1080 Ti + tensorflow 1.3 w/ gpu support. 
 
 
 
@@ -16,13 +21,13 @@ I spent two days running into problems and finally resolved to get my tensorflow
 
 - 2017 MacBook Pro, 13-inch without touch bar. OS build number `16F2073` 
 - MSI GTX 1080 Ti. 
-- Akitio Node Thunderbolt 3 External, [BH Photo Video](https://www.bhphotovideo.com/c/product/1303819-REG/akitio_ak_node_t3ia_aktu_thunderbolt3_external_pcie_box.html).
+- Akitio Node Thunderbolt 3 External, [Bought from BH Photo Video](https://www.bhphotovideo.com/c/product/1303819-REG/akitio_ak_node_t3ia_aktu_thunderbolt3_external_pcie_box.html).
 
 **Environment** I used:
 
-- homebrew 1.3.4
-- anaconda + python 3.6
-- I created a env in anaconda use `conda create --name [env_name] python=3.5 numpy scipy matplotlib theano keras ipython jupyter` and pip 9.0.1 comes with py35. 
+- `homebrew 1.3.4`
+- `anaconda + python 3.6`
+- I created a env in anaconda use `conda create --name [env_name] python=3.5 numpy scipy matplotlib theano keras ipython jupyter` and `pip 9.0.1` comes with py35. 
 
 
 
@@ -32,21 +37,58 @@ I relied on these great tutorials to set things up.
 
 - [eGPU Set up on 2017 15inch MacBook Pro, GTX 1080 Ti + Akitio Node, MacOS](https://egpu.io/forums/implementation-guides/2017-15-macbook-pro-touchbar-gtx1080ti40gbs-tb3akitio-node-macos/)
 - [Complete Guide on Macbook + tf 1.3 + GPU](https://metakermit.com/2017/compiling-tensorflow-with-gpu-support-on-a-macbook-pro/)
-- [Outline of Setting Up Macbook + Akitio + 1080 Ti + Tensorflow](https://apple.stackexchange.com/questions/277356/machine-learning-on-external-gpu-with-cuda-and-late-mbp-2016/283903#283903)
+- [Stack Exchange Outline of Setting Up Macbook + Akitio + 1080 Ti + Tensorflow](https://apple.stackexchange.com/questions/277356/machine-learning-on-external-gpu-with-cuda-and-late-mbp-2016/283903#283903)
 - [Complete Guide that setting up MacOS + tensorflow 1.2 + GPU](https://medium.com/@mattias.arro/installing-tensorflow-1-2-from-sources-with-gpu-support-on-macos-4f2c5cab8186)
+
+
+
+
+## Bash Profile
+
+Throughout the process I added a bunch of paths to my bash profile. Here is a summary of them: 
+
+```bash
+# =================================
+# Set up eGPU driver + tensorflow
+# =================================
+#
+# Step 1.
+# CUDA INSTALL
+# so that all the CUDA binaries are available to you on the command line:
+# 
+export PATH=/Developer/NVIDIA/CUDA-8.0/bin${PATH:+:${PATH}}
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
+#
+# Step 2.
+# CUDNN Installation
+#
+export DYLD_LIBRARY_PATH="/usr/local/cuda/lib":$DYLD_LIBRARY_PATH
+
+#
+# Step 3. 
+# Set up env to build tensorflow
+# copied from https://metakermit.com/2017/compiling-tensorflow-with-gpu-support-on-a-macbook-pro/
+
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
+export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
+export PATH=$DYLD_LIBRARY_PATH:$PATH
+# ==================================
+```
+
 
 
 
 ## Steps
 
-1. [**Install CUDA** from Nvidia](https://developer.nvidia.com/cuda-downloads) and [Official instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-mac-os-x/index.html). Or, as suggested by [this post](https://metakermit.com/2017/compiling-tensorflow-with-gpu-support-on-a-macbook-pro/), install with `brew tap caskroom/drivers & brew cask install cuda`. 
-   I installed from Nvidia, chose CUDA 8.0.61 and its patch to 8.0.62. 
+1. [**Install CUDA** from Nvidia](https://developer.nvidia.com/cuda-downloads) and [follow its official instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-mac-os-x/index.html). Or, as suggested by [this post](https://metakermit.com/2017/compiling-tensorflow-with-gpu-support-on-a-macbook-pro/), install with `brew tap caskroom/drivers & brew cask install cuda`. 
+   I installed from Nvidia, chose CUDA `8.0.61` and patched it to `8.0.62`. 
 
-2. **Connect Graphic Card to Akitio Node**, screw-driver needed. [Youtube Video](https://www.youtube.com/watch?v=MeOqTzGcgPI)
+2. **Connect Graphic Card to Akitio Node and to laptop**, screw-driver needed. [Youtube Video](https://www.youtube.com/watch?v=MeOqTzGcgPI)
 
 3. **Disable SIP** (System Integrity Protection). [Tutorial](http://osxdaily.com/2015/10/05/disable-rootless-system-integrity-protection-mac-os-x/ )
 
-4. **Change OS Build Version** (required for Macbook with build 16F2073) [Discussion on this](https://egpu.io/forums/implementation-guides/2017-15-macbook-pro-touchbar-gtx1080ti40gbs-tb3akitio-node-macos/). In short,  open the file  `/System/Library/CoreServices/SystemVersion.plist` and change the build number from 16F2073 to 16F73. 
+4. **Change OS Build Version** (required for Macbook with build 16F2073). [Discussion on this](https://egpu.io/forums/implementation-guides/2017-15-macbook-pro-touchbar-gtx1080ti40gbs-tb3akitio-node-macos/). In short,  open the file  `/System/Library/CoreServices/SystemVersion.plist` and change the build number from `16F2073` to `16F73`. 
 
 5. **Download the automate-eGPU.sh** script and execute it.
 
@@ -56,29 +98,32 @@ I relied on these great tutorials to set things up.
 
 6. After restart, I **upgrade CUDA to 8.0.90**
 
-7. **Verify CUDA installation** by running deviceQuery
+7. **Downgrade Xcode to 8.2** and corresponding command line tools. You could download them from [Apple Developer website](https://developer.apple.com/download/more/). Newer versions of clang would give you [error](https://github.com/arrayfire/arrayfire/issues/1384) when compiling CUDA samples. 
 
-   1. **Downgrade Xcode to 8.2** and corresponding command line tools. Newer version of clang would give you [error](https://github.com/arrayfire/arrayfire/issues/1384) when compiling CUDA samples. 
+   Verify by `clang —version` and `pkgutil --pkg-info=com.apple.pkg.CLTools_Executables`. Expecting `Apple LLVM version 8.0.0 (clang-800.0.42.1)` and `version: 8.2.0.0.1.1480973914`.
 
-   2. Verify by `clang —version` and `pkgutil --pkg-info=com.apple.pkg.CLTools_Executables`. Expecting `Apple LLVM version 8.0.0 (clang-800.0.42.1)` and `version: 8.2.0.0.1.1480973914`.
+8. **Add CUDA binaries to path**
 
-   3. Add to bash profile `export DYLD_LIBRARY_PATH="/usr/local/cuda/lib":$DYLD_LIBRARY_PATH`
+   ```bash
+   export PATH=/Developer/NVIDIA/CUDA-8.0/bin${PATH:+:${PATH}}
+   export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
+   ```
 
-   4. Try the deviceQuery
+9. **Verify CUDA installation** by running deviceQuery
 
-      ```bash
-      cd /usr/local/cuda/samples
-      sudo make -C 1_Utilities/deviceQuery
-      ./1_Utilities/deviceQuery
-      ```
+   ```bash
+   cd /usr/local/cuda/samples
+   sudo make -C 1_Utilities/deviceQuery
+   ./1_Utilities/deviceQuery
+   ```
 
-      should detect the device and yield `CUDA Capability Major/Minor version number: 6.1` ( I have a Geforce GTX 1080 Ti). 
+   should detect the device and yield `CUDA Capability Major/Minor version number: 6.1` ( I have a Geforce GTX 1080 Ti). 
 
-8. **Install cuDNN v6.0 for Mac OS**
+10. **Install cuDNN v6.0 for Mac OS**
 
-   1. Download and unzip cuDNN 6.0 for MacOS from NVIDIA
+      - Download and unzip cuDNN 6.0 for MacOS from NVIDIA
 
-   2. Move the cuDNN libraries to cuda:
+      - Move the cuDNN libraries to cuda:
 
       ```bash
       sudo mv -v cuda/lib/libcudnn* /usr/local/cuda/lib
@@ -86,33 +131,43 @@ I relied on these great tutorials to set things up.
       sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib/libcud
       ```
 
-   3. Verify the installation by `echo -e '#include"cudnn.h"\n void main(){}' | nvcc -x c - -o /dev/null -I/usr/local/cuda/include -L/usr/local/cuda/lib -lcudnn` . I got a few warning but no error. 
-
-9. **Installing tensorflow** from Source, following the [official doc](https://www.tensorflow.org/install/install_sources#prepare_environment_for_mac_os) except the following:
-
-   1. **Bazel version**: The most recent r1.3 branch of tensorflow asks for bazel version 0.5.4. I got `xxx file not built` error when building with bazel 0.5.4. Therefore, I  `cd tensorflow & git checkout b46340f` and use **bazel 0.4.5** that comes with conda to build.
-
-   2. Set the environment flag
+      - Add to path
 
       ```bash
-      export CUDA_HOME=/usr/local/cuda
-      export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
-      export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
-      export PATH=$DYLD_LIBRARY_PATH:$PATH
+      export DYLD_LIBRARY_PATH="/usr/local/cuda/lib":$DYLD_LIBRARY_PATH
       ```
 
-   3. **comment out the BUILD file requiring OpenMP**: open _tensorflow/third_party/gpus/cuda/BUILD.tpl_ and comment out `# linkopts = [“-lgomp”]` 
+      - Verify the installation by `echo -e '#include"cudnn.h"\n void main(){}' | nvcc -x c - -o /dev/null -I/usr/local/cuda/include -L/usr/local/cuda/lib -lcudnn` . I got a few warning but no error. 
 
-   4. **run the configuration**, opt in for CUDA support, and substitute `TF_CUDA_COMPUTE_CAPABILITIES` with your output of deviceQuery.
+11. **Installing tensorflow** from Source, following the [official doc](https://www.tensorflow.org/install/install_sources#prepare_environment_for_mac_os) except the following:
 
-   5. `bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package --verbose_failures --action_env PATH --action_env LD_LIBRARY_PATH --action_env DYLD_LIBRARY_PATH` 
+      - **Bazel version**: The most recent r1.3 branch of tensorflow asks for bazel version 0.5.4. I got `xxx file not built` error when building with bazel 0.5.4. Therefore, I  `cd tensorflow & git checkout b46340f` and use **bazel 0.4.5** that comes with conda to build.
 
-      Took about 50 minutes and huge RAM consumption. Expecting no error. 
+      - Set the environment flag
 
-   6. **Build the pip package** `bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg`
+       ```bash
+       export CUDA_HOME=/usr/local/cuda
+       export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
+       export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
+       export PATH=$DYLD_LIBRARY_PATH:$PATH
+       ```
 
-   7. **Install the pip package** 
+      - **After checkout, comment out the BUILD file requiring OpenMP**: open `tensorflow/third_party/gpus/cuda/BUILD.tpl` and comment out `# linkopts = [“-lgomp”]` 
 
-      _SideNote:_ My laptop fall asleep after finished, and my conda env switched to root with python36 installed. This resulted in pip [unable to install the un-supported wheel](https://stackoverflow.com/questions/28107123/cannot-install-numpy-from-wheel-format?rq=1) but renaming the wheel name would proceed the installation. Yet after the installation the tensorflow library will not work. 
+      - **Checksum mismatch** [discussion on Github](https://github.com/tensorflow/tensorflow/issues/12979). Workaround: _If it happens_, comment out the checksum line in `tensorflow/workspace.bzl` that says `sha256=repo_ctx_attr.sha256`.
 
-      ​
+      - **run the configuration**, opt in for CUDA support, and substitute `TF_CUDA_COMPUTE_CAPABILITIES` with your output of deviceQuery.
+
+      - `bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package --verbose_failures --action_env PATH --action_env LD_LIBRARY_PATH --action_env DYLD_LIBRARY_PATH` 
+
+         Took about 50 minutes and huge RAM consumption. Expecting no error. 
+
+      - **Build the pip package** `bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg`
+
+      - **Install the pip package** `sudo pip install /tmp/tensorflow_pkg/tensorflow-1.3.0-.whl`
+
+       _SideNote:_ My laptop fall asleep after finished. Logging back in, my conda env switched to root with python36 installed. This resulted in pip [unable to install the un-supported wheel](https://stackoverflow.com/questions/28107123/cannot-install-numpy-from-wheel-format?rq=1) but renaming the wheel name would proceed the installation. Yet after the installation the tensorflow library will not work. 
+
+    ​
+
+    ​
