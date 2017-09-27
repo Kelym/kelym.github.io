@@ -31,14 +31,14 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Disque Comment with built in support from minima
 disqus:
   shortname: kayke
 
 # Customize
-permalink: /:year/:month/:day/:title.html   #博文的固定链接
-#paginate: 15                                #分页时每页博文数量
+permalink: /:year/:month/:day/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
