@@ -14,13 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kayke's Place
-# email: dustocyno@gmail.com
+email: liyiming.dot.ke.at.g
 description: >- # this means to ignore newlines until "baseurl:"
-  This is Kay Ke's blog where she polishes her writing by splashing random ideas 
+  This is Kay Ke (Liyiming Ke)'s blog where she polishes her writing by splashing random ideas 
   about computers, machine learning, readings and creations. 
-logo: 
-search:
-encoding:
+#logo: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kelym.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: xkelym

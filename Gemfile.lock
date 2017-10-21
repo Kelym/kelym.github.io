@@ -213,6 +213,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-seo-tag
   minima
 
 BUNDLED WITH
