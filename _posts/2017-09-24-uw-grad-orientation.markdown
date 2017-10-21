@@ -2,7 +2,9 @@
 layout: post
 title:  "UW New Grad Orientation 2017"
 date:   2017-09-24 15:56:19 -0700
-categories: uw grad life
+published: true
+categories: misc
+tags: uw grad life
 ---
 
 ~~**TL;DR** Hank Levy isn't looking too bad these days.~~	

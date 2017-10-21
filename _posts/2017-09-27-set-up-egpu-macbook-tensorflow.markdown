@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Set Up Macbook with GTX1080Ti and Tensorflow
+published: true
 date: 2017-09-27 10:11:11.000000000 +09:00
+categories: misc
 tags: tensorflow ml gpu setup
 ---
 
@@ -121,23 +123,23 @@ export PATH=$DYLD_LIBRARY_PATH:$PATH
 
 10. **Install cuDNN v6.0 for Mac OS**
 
-      - Download and unzip cuDNN 6.0 for MacOS from NVIDIA
+     - Download and unzip cuDNN 6.0 for MacOS from NVIDIA
 
-      - Move the cuDNN libraries to cuda:
+     - Move the cuDNN libraries to cuda:
 
-      ```bash
-      sudo mv -v cuda/lib/libcudnn* /usr/local/cuda/lib
-      sudo mv -v cuda/include/cudnn.h /usr/local/cuda/include
-      sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib/libcud
-      ```
+     ```bash
+     sudo mv -v cuda/lib/libcudnn* /usr/local/cuda/lib
+     sudo mv -v cuda/include/cudnn.h /usr/local/cuda/include
+     sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib/libcud
+     ```
 
-      - Add to path
+     - Add to path
 
-      ```bash
-      export DYLD_LIBRARY_PATH="/usr/local/cuda/lib":$DYLD_LIBRARY_PATH
-      ```
+     ```bash
+     export DYLD_LIBRARY_PATH="/usr/local/cuda/lib":$DYLD_LIBRARY_PATH
+     ```
 
-      - Verify the installation by `echo -e '#include"cudnn.h"\n void main(){}' | nvcc -x c - -o /dev/null -I/usr/local/cuda/include -L/usr/local/cuda/lib -lcudnn` . I got a few warning but no error. 
+     - Verify the installation by `echo -e '#include"cudnn.h"\n void main(){}' | nvcc -x c - -o /dev/null -I/usr/local/cuda/include -L/usr/local/cuda/lib -lcudnn` . I got a few warning but no error. 
 
 11. **Installing tensorflow** from Source, following the [official doc](https://www.tensorflow.org/install/install_sources#prepare_environment_for_mac_os) except the following:
 
@@ -170,4 +172,4 @@ export PATH=$DYLD_LIBRARY_PATH:$PATH
 
     ​
 
-    ​
+    
