@@ -2,7 +2,7 @@
 layout: page
 title: Categories
 permalink: /categories/
-published: true
+published: false
 ---
 
 Jump to categories:
