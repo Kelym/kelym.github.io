@@ -11,3 +11,4 @@ There are a lot of great bloggers writing about Machine Learning. Some of them m
 - [Adit Deshpande's Blog](https://adeshpande3.github.io/adeshpande3.github.io/)
 - [Dhruv Parthasarathy's Medium](https://blog.athelas.com/@dhruvp)
 - [Andrej Karpathy's Blog](http://karpathy.github.io/)
+- [Eric Jang's Blog](http://blog.evjang.com/)
