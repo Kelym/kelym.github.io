@@ -121,6 +121,7 @@ export PATH=$DYLD_LIBRARY_PATH:$PATH
 
    should detect the device and yield `CUDA Capability Major/Minor version number: 6.1` ( I have a Geforce GTX 1080 Ti). 
 
+
 10. **Install cuDNN v6.0 for Mac OS**
 
      - Download and unzip cuDNN 6.0 for MacOS from NVIDIA
@@ -139,7 +140,11 @@ export PATH=$DYLD_LIBRARY_PATH:$PATH
      export DYLD_LIBRARY_PATH="/usr/local/cuda/lib":$DYLD_LIBRARY_PATH
      ```
 
-     - Verify the installation by `echo -e '#include"cudnn.h"\n void main(){}' | nvcc -x c - -o /dev/null -I/usr/local/cuda/include -L/usr/local/cuda/lib -lcudnn` . I got a few warning but no error. 
+     - Verify the installation by `echo -e '#include"cudnn.h"\n void main(){}' | nvcc -x c - -o /dev/null -I/usr/local/cuda/include -L/usr/local/cuda/lib -lcudnn`.
+
+     - I got a few warning but no error.
+
+
 
 11. **Installing tensorflow** from Source, following the [official doc](https://www.tensorflow.org/install/install_sources#prepare_environment_for_mac_os) except the following:
 
@@ -168,7 +173,17 @@ export PATH=$DYLD_LIBRARY_PATH:$PATH
 
       - **Install the pip package** `sudo pip install /tmp/tensorflow_pkg/tensorflow-1.3.0-.whl`
 
-       _SideNote:_ My laptop fall asleep after finished. Logging back in, my conda env switched to root with python36 installed. This resulted in pip [unable to install the un-supported wheel](https://stackoverflow.com/questions/28107123/cannot-install-numpy-from-wheel-format?rq=1) but renaming the wheel name would proceed the installation. Yet after the installation the tensorflow library will not work. 
+
+12. **ALL DONE!**
+
+      - Test your installment by running the [cutest MNIST toy](https://github.com/tensorflow/tensorflow/blob/r1.3/tensorflow/examples/tutorials/mnist/mnist_deep.py)
+
+      - See, in your terminal, that tensorflow is running!
+      ```bash
+      2017-09-26 21:34:32.053838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0
+      2017-09-26 21:34:32.053843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y
+      2017-09-26 21:34:32.053851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:85:00.0)
+      ```
 
     ​
 
