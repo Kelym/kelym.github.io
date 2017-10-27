@@ -7,7 +7,7 @@ categories: misc
 tags: tensorflow ml gpu setup
 ---
 
-**TL;DR** Verbose guide on setting up 2017 Macbook Pro 2.3GHz i5 + GTX 1080 Ti + tensorflow 1.3 w/ gpu support. 
+**TL;DR** Guide for 2017 Macbook Pro: connect to GTX 1080 Ti, install CUDA and CUDNN, build tensorflow 1.3 with gpu support. 
 
 
 
