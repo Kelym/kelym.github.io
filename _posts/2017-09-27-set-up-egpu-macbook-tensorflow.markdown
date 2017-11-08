@@ -7,14 +7,13 @@ categories: misc
 tags: tensorflow ml gpu setup
 ---
 
-**TL;DR** Guide for 2017 Macbook Pro: connect to GTX 1080 Ti, install CUDA and CUDNN, build tensorflow 1.3 with gpu support. 
+**TL;DR** 2017 Macbook Pro: connect to GTX 1080 Ti graphic card, install CUDA and CUDNN, build tensorflow 1.3 with gpu support. 
 
 
 
 ## Introduction
 
-I spent two days running into problems and finally resolved to get my tensorflow powered by GTX 1080 Ti. Cheers! Thanks to all the online posts, most problems I got were already answered. There were a few issues raised because of versions of bazel and libraries involved. So I would clarify as much as possible on those. 
-
+As I got more involved with large scale deep learning, I decided to install ML libraries with GPU support. Unfortunately, the available documentation for supporting GPU on a Macbook Pro is limited and there is no official solution to even connect Nvidia GPU to Macbook. Thanks to several the online posts, I successfully installed tensorflow on my machine. There were a few issues raised because of versions of libraries involved. So I would clarify as much as possible on those. 
 
 
 ## Spec
@@ -22,15 +21,14 @@ I spent two days running into problems and finally resolved to get my tensorflow
 **Equipments** I had:
 
 - 2017 MacBook Pro, 13-inch without touch bar. OS build number `16F2073` 
-- MSI GTX 1080 Ti. 
-- Akitio Node Thunderbolt 3 External, [Bought from BH Photo Video](https://www.bhphotovideo.com/c/product/1303819-REG/akitio_ak_node_t3ia_aktu_thunderbolt3_external_pcie_box.html).
+- GPU card: MSI GTX 1080 Ti. 
+- eGPU closure: Akitio Node Thunderbolt 3 External, [Bought from BH Photo Video](https://www.bhphotovideo.com/c/product/1303819-REG/akitio_ak_node_t3ia_aktu_thunderbolt3_external_pcie_box.html).
 
 **Environment** I used:
 
 - `homebrew 1.3.4`
 - `anaconda + python 3.6`
 - I created a env in anaconda use `conda create --name [env_name] python=3.5 numpy scipy matplotlib theano keras ipython jupyter` and `pip 9.0.1` comes with py35. 
-
 
 
 ## Resources
@@ -41,8 +39,6 @@ I relied on these great tutorials to set things up.
 - [Complete Guide on Macbook + tf 1.3 + GPU](https://metakermit.com/2017/compiling-tensorflow-with-gpu-support-on-a-macbook-pro/)
 - [Stack Exchange Outline of Setting Up Macbook + Akitio + 1080 Ti + Tensorflow](https://apple.stackexchange.com/questions/277356/machine-learning-on-external-gpu-with-cuda-and-late-mbp-2016/283903#283903)
 - [Complete Guide that setting up MacOS + tensorflow 1.2 + GPU](https://medium.com/@mattias.arro/installing-tensorflow-1-2-from-sources-with-gpu-support-on-macos-4f2c5cab8186)
-
-
 
 
 ## Bash Profile
