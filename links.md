@@ -4,7 +4,7 @@ title: Links
 permalink: /links/
 ---
 
-There are a lot of great bloggers writing about Machine Learning. Some of them made their subjects crystal clear and I found them to be very inspiring:
+There are a lot of great posts on Machine Learning. Some of them made their subjects crystal clear and I found them to be very inspiring:
 
 - [colah's blog](https://colah.github.io/)
 - [Seita's Place](https://danieltakeshi.github.io/)
@@ -12,3 +12,4 @@ There are a lot of great bloggers writing about Machine Learning. Some of them m
 - [Dhruv Parthasarathy's Medium](https://blog.athelas.com/@dhruvp)
 - [Andrej Karpathy's Blog](http://karpathy.github.io/)
 - [Eric Jang's Blog](http://blog.evjang.com/)
+- [Distill](https://distill.pub/)
