@@ -39,6 +39,10 @@ disqus:
 # Customize
 permalink: /:year/:month/:day/:title
 
+# Collections
+collections:
+  - projects
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
