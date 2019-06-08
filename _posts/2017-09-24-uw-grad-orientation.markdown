@@ -32,7 +32,7 @@ A dozen professors came to brief us about their Quals courses in the upcoming ye
 
 In summary, it looks like an encouraging start for my grad life!
 
-![Photo]({{site.url}}/{{site.baseurl}}/assets/20170924-canoe.jpg){:.center-image}*Canoeing Trip on Lake Wash*
+![Photo](/assets/img/20170924-canoe.jpg){:.center-image}*Canoeing Trip on Lake Wash*
 
 
 

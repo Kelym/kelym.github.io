@@ -10,6 +10,6 @@ This blog was created on Sep 2017, when I entered grad school. I got my insprati
 
 You can reach me at ```kayke@uw.edu```.
 
-![Kay in Seattle, Washington. Sep 2017]({{site.url}}/{{site.baseurl}}/assets/k.jpg){:height="300" .center-image }*Kay in Seattle, Washington. Sep 2017*
+![Kay in Seattle, Washington. Sep 2017](/assets/img/20170927-k.jpg){:height="300" .center-image }*Kay in Seattle, Washington. Sep 2017*
 
 ​	
