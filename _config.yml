@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kayke's Place
-email: liyiming.dot.ke.at.g
+email: kayke@uw.dot.edu
 description: >- # this means to ignore newlines until "baseurl:"
   This is Kay Ke (Liyiming Ke)'s blog where she polishes her writing by splashing random ideas 
   about computers, machine learning, readings and creations. 
@@ -38,6 +38,10 @@ disqus:
 
 # Customize
 permalink: /:year/:month/:day/:title
+
+# Collections
+collections:
+  - projects
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

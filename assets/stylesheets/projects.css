@@ -1,0 +1,43 @@
+.wrapper {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+table.projlist {
+  margin-left: 0px;
+  border: 0;
+  list-style-type:none;
+  width:100%;
+}
+table.projlist td { border:none; }
+table tr:nth-child(even) { background-color: rgba(0, 0, 255, 0); }
+.projimg {
+  max-width:33%;
+  vertical-align:top;
+  align-self:center;
+  padding:20px 0 20px 0;
+}
+td.projimg > img{
+  max-width: 96%;
+}
+.projtext {
+  /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;*/
+  font-size: 0.9rem;
+  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  width: 67%;
+  vertical-align:top;
+  padding: 20px 0 20px 0;
+}
+.projtext strong { /* title */
+  color: #007bff;
+  font-size: 1rem;
+}
+.projtext details, summary{
+  display: inline;
+}
+.projtext details summary::-webkit-details-marker {
+  display:none;
+}
+.projbutton { padding-top: 5px; }
+.projbutton a {color: #1772d0;}
+.abstract { padding-top: 5px; }
+pre.bib { white-space: pre-wrap;}
