@@ -11,3 +11,24 @@ This blog was created on Sep 2017, when I entered grad school. I got my insprati
 You can reach me at ```kayke@uw.edu```.
 
 ![Kay in Seattle, Washington. Sep 2017](/assets/img/20170927-k.jpg){:height="300" .center-image }*Kay in Seattle, Washington. Sep 2017*
+
+<br><br><br>
+
+
+## Ongoing Project
+
+As of 2019 winter, I am devoted to the chopstick-based manipulation project.
+
+<center style="font-family: georgia">The chopstick-based manipulation project
+    <br> <span></span> = robot + chopstick + algorithm
+    <br> <span></span> = picking up challenging items!
+</center>
+<br>
+
+We started the project in 2019 summer. We have been experimenting with imitation learning, reinforcement learning and control algorithms.
+
+A video of our robot in teleoperation.
+
+<iframe src="https://drive.google.com/file/d/11PgIxIlMnfo-VPsoWPTcdh9w6yiVtTSP/preview" width="780" height="480"></iframe>
+
+_Our 6-DOF robot arm is assembled at the Personal Robotics Lab, based on components from HEBI Robotics. The chopsticks are mounted by 3D printed holders. Tracking of master chopsticks held by human is done via Optitrack. The demo in display computes inverse-kinematics and use PID control to move the robot._
