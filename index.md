@@ -6,7 +6,7 @@ layout: home
 ---
 Hi, I am Liyiming Ke, or "Kay". I am a grad student at University of Washington. I am passionate about Machine Learning, especially Reinforcement Learning and Vision, and almost everything in Artificial Intelligence or Applied ML.
 
-This blog was created on Sep 2017, when I entered grad school. I got my insprations from [several awesome bloggers]({{site.url}}/links/) writing about Machine Learning. And I hope to share my journey in Machine Learning and to splash my random thoughts here.
+This blog was created on Sep 2017, when I entered grad school. I got my insprations from [several awesome bloggers]({{site.url}}links/) writing about Machine Learning. And I hope to share my journey in Machine Learning and to splash my random thoughts here.
 
 You can reach me at ```kayke@uw.edu```.
 
@@ -31,4 +31,4 @@ A video of our robot in teleoperation.
 
 <iframe src="https://drive.google.com/file/d/11PgIxIlMnfo-VPsoWPTcdh9w6yiVtTSP/preview" width="780" height="480"></iframe>
 
-_Our 6-DOF robot arm is assembled at the Personal Robotics Lab, based on components from HEBI Robotics. The chopsticks are mounted by 3D printed holders. Tracking of master chopsticks held by human is done via Optitrack. The demo in display computes inverse-kinematics and use PID control to move the robot._
+_The demo in display i) tracks the chopsticks held by human, ii) computes inverse-kinematics and iii) use PID control to move the robot. Our 6-DOF robot arm is assembled at the Personal Robotics Lab, based on components from HEBI Robotics. The chopsticks are mounted by 3D printed holders. Tracking of master chopsticks held by human is done via Optitrack._
