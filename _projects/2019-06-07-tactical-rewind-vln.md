@@ -10,7 +10,7 @@ arxiv: https://arxiv.org/abs/1903.02547
 code: https://github.com/kelym/fast
 poster: 20190607-vln.pdf
 bibtype: inproceedings
-bibname: ke2017tactile
+bibname: ke2019tactile
 bibauthor: Ke, Liyiming and Li, Xiujun and Bisk, Yonatan and Holtzman, Ari and Gan, Zhe and Liu, Jingjing and Gao, Jianfeng and Choi, Yejin and Srinivasa, Siddhartha
 bibbook: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
 ---

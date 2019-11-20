@@ -22,6 +22,7 @@ published: true
           <a href="javascript:toggleblock('{{proj.bibname}}-abs')">abstract</a>
           {% if proj.bibtype %} | <a href="javascript:toggleblock('{{proj.bibname}}-bib')">bibtex</a> {% endif %}
           {% if proj.arxiv %} | <a href="{{proj.arxiv}}" target="_blank">arXiv</a> {% endif %}
+          {% if proj.pdf %} | <a href="{{proj.pdf}}" target="_blank">PDF</a> {% endif %}
           {% if proj.code %} | <a href="{{proj.code}}" target="_blank">code</a> {% endif %}
           {% if proj.poster %} | <a href="{{site.url}}/download/{{proj.poster}}" target="_blank">poster</a> {% endif %}
         </div>
@@ -33,7 +34,7 @@ published: true
     title=&#123;{{proj.title}}},
     author=&#123;{{proj.bibauthor}}},
     booktitle=&#123;{{proj.bibbook}}},
-    year=&#123;{{proj.year}} }}
+    year=&#123;{{proj.year}}}}
 {{proj.bib}}</pre>
         {% endif %}
     </td>
