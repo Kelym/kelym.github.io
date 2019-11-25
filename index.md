@@ -29,6 +29,7 @@ We started the project in 2019 summer. We have been experimenting with imitation
 
 A video of our robot in teleoperation.
 
-<iframe src="https://drive.google.com/file/d/11PgIxIlMnfo-VPsoWPTcdh9w6yiVtTSP/preview" width="780" height="480"></iframe>
+{% include gDrivePlayer.html id="11PgIxIlMnfo-VPsoWPTcdh9w6yiVtTSP/preview" height=394 width=680 %}
+
 
 _The demo in display i) tracks the chopsticks held by human, ii) computes inverse-kinematics and iii) use PID control to move the robot. Our 6-DOF robot arm is assembled at the Personal Robotics Lab, based on components from HEBI Robotics. The chopsticks are mounted by 3D printed holders. Tracking of master chopsticks held by human is done via Optitrack._
