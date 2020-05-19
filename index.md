@@ -10,9 +10,9 @@ This blog was created on Sep 2017, when I entered grad school. I got my insprati
 
 You can reach me at ```kayke@uw.edu```.
 
-![Kay in Seattle, Washington. Sep 2017](/assets/img/20170927-k.jpg){:height="300" .center-image }*Kay in Seattle, Washington. Sep 2017*
+![Kay in Seattle, Washington. Apr 2020.](/assets/img/20190405-k.jpg){:height="360" .center-image }*"At home during coronavirus lockdown" Seattle, USA. Apr 2020*
 
-<br><br><br>
+<br><br>
 
 
 ## Ongoing Project
