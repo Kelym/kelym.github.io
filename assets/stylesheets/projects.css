@@ -41,3 +41,6 @@ td.projimg > img{
 .projbutton a {color: #1772d0;}
 .abstract { padding-top: 5px; }
 pre.bib { white-space: pre-wrap;}
+.highlight{
+  color: #FF0000;
+}
