@@ -11,5 +11,5 @@ bibtype: inproceedings
 bibname: ke2020imitation
 bibauthor: Ke, Liyiming and Choudhury, Sanjiban and Barnes, Matt and Sun, Wen and Lee, Gilwoo and Srinivasa, Siddhartha
 bibbook: International Workshop on the Algorithmic Foundations of Robotics
-pdf: http://robotics.cs.rutgers.edu/wafr2020/wp-content/uploads/sites/7/2020/05/WAFR_2020_FV_38.pdf
+pdf: https://personalrobotics.cs.washington.edu/publications/ke2020fimitation.pdf
 ---
