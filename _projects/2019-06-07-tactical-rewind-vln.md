@@ -13,5 +13,6 @@ bibtype: inproceedings
 bibname: ke2019tactile
 bibauthor: Ke, Liyiming and Li, Xiujun and Bisk, Yonatan and Holtzman, Ari and Gan, Zhe and Liu, Jingjing and Gao, Jianfeng and Choi, Yejin and Srinivasa, Siddhartha
 bibbook: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+pdf: http://openaccess.thecvf.com/content_CVPR_2019/html/Ke_Tactical_Rewind_Self-Correction_via_Backtracking_in_Vision-And-Language_Navigation_CVPR_2019_paper.html
 ---
 

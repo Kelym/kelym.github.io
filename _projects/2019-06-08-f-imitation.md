@@ -7,9 +7,9 @@ venue: Workshop on the Algorithmic Foundations of Robotics(WAFR)
 year: 2020
 tags: imitation divergence optimization information_theory
 arxiv: https://arxiv.org/abs/1905.12888
-bibtype: article
-bibname: ke2019imitation
-bibauthor: Ke, Liyiming and Barnes, Matt and Sun, Wen and Lee, Gilwoo and Choudhury, Sanjiban and Srinivasa, Siddhartha
-bibbook: arXiv preprint arXiv:1905.12888
+bibtype: inproceedings
+bibname: ke2020imitation
+bibauthor: Ke, Liyiming and Choudhury, Sanjiban and Barnes, Matt and Sun, Wen and Lee, Gilwoo and Srinivasa, Siddhartha
+bibbook: International Workshop on the Algorithmic Foundations of Robotics
+pdf: http://robotics.cs.rutgers.edu/wafr2020/wp-content/uploads/sites/7/2020/05/WAFR_2020_FV_38.pdf
 ---
-
