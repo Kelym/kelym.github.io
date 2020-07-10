@@ -5,5 +5,6 @@ excerpt: Chopsticks constitute a simple yet versatile, ubiquitous and effective 
 author: <b>Liyiming Ke</b>, Ajinkya Kamat, Jingqiang Wang, Tapomayukh Bhattacharjee, Christoforos Mavrogiannis, Siddhartha S. Srinivasa
 venue: International conference on Intelligent Robots and Systems (IROS)
 year: 2020
+pdf: https://personalrobotics.cs.washington.edu/publications/ke2020teleop.pdf
 tags: manipulation teleoperation human_study
 ---
