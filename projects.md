@@ -12,9 +12,9 @@ published: true
      {%- if proj.image -%}
         <img src="/assets/img/{{ proj.image }}" alt="teaser"/>
      {%- endif -%}
-    </td> 
+    </td>
     <td class="projtext">
-        <strong>{{ proj.title }}</strong> <br> 
+        <strong>{{ proj.title }}</strong> <br>
         <span>{{ proj.author}}</span> <br>
         <em>{{ proj.venue}},</em> {{ proj.year }} <br>
         <div class='projbutton'>
