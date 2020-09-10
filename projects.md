@@ -68,6 +68,7 @@ published: true
           {% if proj.pdf %} | <a href="{{proj.pdf}}" target="_blank">PDF</a> {% endif %}
           {% if proj.code %} | <a href="{{proj.code}}" target="_blank">code</a> {% endif %}
           {% if proj.poster %} | <a href="{{site.url}}/download/{{proj.poster}}" target="_blank">poster</a> {% endif %}
+          {% if proj.video %} | <a href="{{proj.video}}" target="_blank">video</a> {% endif %}
         </div>
         <p class='abstract'>
             <i id='{{proj.bibname}}-abs' style="display:none;"> {{proj.excerpt}}</i>
