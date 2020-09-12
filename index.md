@@ -4,7 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-Hi, I am Liyiming Ke, or "Kay". I am a grad student at University of Washington working with [Siddhartha Srinivasa](https://goodrobot.ai/). I am passionate about Robotics Manipulation, Reinforcement Learning, Representation Learning.
+Hi, I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a grad student at University of Washington working with [Siddhartha Srinivasa](https://goodrobot.ai/). I am passionate about Robotics Manipulation, Reinforcement Learning, Representation Learning.
 
 This blog was created on Sep 2017, when I entered grad school. I got my insprations from [several awesome bloggers]({{site.url}}links/) writing about Machine Learning. And I hope to share my journey in Machine Learning and to splash my random thoughts here.
 
