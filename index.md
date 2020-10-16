@@ -27,9 +27,12 @@ As of 2019 winter, I am devoted to the chopstick-based manipulation project.
 
 We started the project in 2019 summer. We have been experimenting with imitation learning, reinforcement learning and control algorithms.
 
-A video of our robot in teleoperation.
+<br>
 
-{% include gDrivePlayer.html id="11PgIxIlMnfo-VPsoWPTcdh9w6yiVtTSP/preview" height=394 width=680 %}
+<div class="embed-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/32Q2xVl5j_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
+<br>
 
-_The demo in display i) tracks the chopsticks held by human, ii) computes inverse-kinematics and iii) use PID control to move the robot. Our 6-DOF robot arm is assembled at the Personal Robotics Lab, based on components from HEBI Robotics. The chopsticks are mounted by 3D printed holders. Tracking of master chopsticks held by human is done via Optitrack._
+Checkout my Publications page to learn more!
