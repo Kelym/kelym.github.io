@@ -9,6 +9,13 @@ table.projlist {
   width:100%;
 }
 table.projlist td { border:none; }
+table.wksplist {
+  margin-left: 5%;
+  border: 0;
+  list-style-type:none;
+  width:95%;
+}
+table.wksplist td { border:none; }
 table tr:nth-child(even) { background-color: rgba(0, 0, 255, 0); }
 .projimg {
   max-width:33%;

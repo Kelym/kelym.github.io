@@ -47,15 +47,10 @@ published: true
 <br>
 <h2>Workshops</h2>
 
-<table class="projlist">
+<table class="wksplist">
 {% for proj in site.projects reversed %}
 <tr>
   {%- if proj.workshop -%}
-    <td class="projimg">
-     {%- if proj.image -%}
-        <img src="/assets/img/{{ proj.image }}" alt="teaser"/>
-     {%- endif -%}
-    </td>
     <td class="projtext">
         <strong>{{ proj.title }}</strong> <br>
         <span>{{ proj.author}}</span> <br>
