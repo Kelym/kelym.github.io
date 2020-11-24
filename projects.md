@@ -16,8 +16,8 @@ published: true
     </td>
     <td class="projtext">
         <strong>{{ proj.title }}</strong> <br>
-        <span>{{ proj.author}}</span> <br>
-        <em>{{ proj.venue}},</em> {{ proj.year }} <br>
+        <span class="projauthor">{{ proj.author}}</span> <br>
+        <p class="projvenue">{{ proj.venue}} {{ proj.year }}</p>
         <div class='projbutton'>
           {% if proj.page %} | <a href="{{proj.page}}" target="_blank">project webpage</a> {% endif %}
           <a href="javascript:toggleblock('{{proj.bibname}}-abs')">abstract</a>
@@ -28,7 +28,7 @@ published: true
           {% if proj.poster %} | <a href="{{site.url}}/assets/download/{{proj.poster}}" target="_blank">poster</a> {% endif %}
         </div>
         <p class='abstract'>
-            <i id='{{proj.bibname}}-abs' style="display:none;"> {{proj.excerpt}}</i>
+            <span id='{{proj.bibname}}-abs' style="display:none;"> {{proj.excerpt}}</span>
         </p>
         {% if proj.bibtype %}
         <pre xml:space='preserve' class='bib' id='{{proj.bibname}}-bib' style="display:none;">@{{proj.bibtype}}&#123;{{proj.bibname}},

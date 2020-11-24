@@ -29,7 +29,7 @@ td.projimg > img{
 .projtext {
   /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;*/
   font-size: 0.9rem;
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   width: 67%;
   vertical-align:top;
   padding: 20px 0 20px 0;
@@ -46,8 +46,10 @@ td.projimg > img{
 }
 .projbutton { padding-top: 5px; }
 .projbutton a {color: #1772d0;}
-.abstract { padding-top: 5px; }
+.abstract { padding-top: 5px;}
 pre.bib { white-space: pre-wrap;}
 .highlight{
   color: #FF0000;
 }
+span.projauthor{font-weight:300;}
+p.projvenue {margin-bottom:0; font-style:italic; font-weight: 600;}
