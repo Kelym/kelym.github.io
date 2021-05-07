@@ -10,6 +10,6 @@ arxiv: https://arxiv.org/abs/2008.00101
 tags: manipulation teleoperation human_study chopsticks
 bibtype: inproceedings
 bibname: ke2020telemanipulation
-bibauthor: Liyiming Ke and Ajinkya Kamat and Jingqiang Wang and Tapomayukh Bhattacharjee and Christoforos Mavrogiannis and Siddhartha S. Srinivasa
-bibbook: International Conference on Intelligent Robots and Systems {IROS}
+bibauthor: Ke, Liyiming and Kamat, Ajinkya and Wang, Jingqiang and Bhattacharjee, Tapomayukh and Mavrogiannis, Christoforos and Srinivasa, Siddhartha S
+bibbook: International Conference on Intelligent Robots and Systems (IROS)
 ---
