@@ -1,7 +1,7 @@
 ---
 image: 20190608-fimitation-teaser.png
 title: Imitation Learning as f-Divergence Minimization
-excerpt: We propose a general framework for imitation learning, formulating imitation learning as estimating and minimizing f-Divergence. By plugging in different divergences, we are able to recover existing algorithms such as Behavior Cloning (Kullback-Leibler), GAIL (Jensen Shannon) and Dagger (Total Variation). We address the problem of learning from multi-modal demonstrations. Instead of attempting to learn all modes, we argue that in many tasks it is sufficient to imitate any one of them. We show that the state-of-the-art methods, due to their choice of loss function, often incorrectly interpolate between such modes. Our key insight is to minimize the right divergence between the learner and the expert state-action distributions, namely the reverse KL divergence. Empirical results show that our approximate technique is able to imitate multi-modal behaviors more reliably than GAIL and behavior cloning.
+excerpt: We propose a general framework for imitation learning (IL), formulating IL as estimating and minimizing f-Divergence. By plugging in different divergences, we are able to recover existing SOTA IL algorithms such as Behavior Cloning, GAIL and Dagger. Our framework shows that these algorithms are all minimizing a lower bound of the trajectory divergence between learner and expert.
 author: <b>Liyiming Ke</b>, Sanjiban Choudhury, Matt Barnes, Wen Sun, Gilwoo Lee, Siddhartha Srinivasa
 venue: WAFR
 year: 2020
