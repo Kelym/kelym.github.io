@@ -1,7 +1,7 @@
 ---
 image: 20201101-chopsticks-grasping.jpg
 title: Grasping with Chopsticks&#58; Combating Covariate Shift in Model-free Imitation Learning for Fine Manipulation
-excerpt: We focus on imitation learning for fine manipulation and use the chopsticks robot as our test bed. Imitation learning traditionally suffers from the covariate shift phenomenon that causes poor generalization. We propose three approaches to reduce covariate shift, none of which requires access to an interactive expert or a model, unlike previous approaches. We demonstrate our methods on chopsticks-grasping task, and observe the agent's success rate increase from 37.3% to 80%, which is comparable to the human expert performance of 82.6%.
+excerpt: Can you use chopsticks to grasp tiny balls? The radius of the ball is 7mm or 10mm. So, if you miss the grasping point by 0.5mm, the task would fail. We actually teach a robot to use chopsticks to autonomously grasp these tiny objects at 80% success rate, comparable to human expert performance of 82.6%. We do so by imitation learning and by proposing three novels approaches to combat covariate shift in imitation leanring.
 author: <b>Liyiming Ke</b>, Jingqiang Wang, Tapomayukh Bhattacharjee, Byron Boots, Siddhartha S. Srinivasa
 venue: ICRA
 year: 2021
