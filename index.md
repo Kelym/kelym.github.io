@@ -17,13 +17,23 @@ You can reach me at ```kayke@uw.edu```.
 
 ## Ongoing Project
 
-<center style="font-family: georgia">The chopstick-based manipulation project
-    <br> <span></span> = robot + chopstick + ? ? ?
+<center style="font-family: georgia"><b>T</b>hank-<b>Y</b>ou-<b>CHO</b>pstick "TYCHO" project
+    <br> <span></span> = robot + chopstick
     <br> <span></span> = picking up challenging items!
 </center>
 <br>
 
-We started the project in 2019 winter. We have been experimenting with imitation learning, reinforcement learning and control algorithms.
+Latest Results from 2022 Fall:
+
+Grasping in unstable regime             |  Grasping with dynamic disturbance
+:-------------------------:|:-------------------------:
+![Cherry-picking-sand](/assets/img/20221001-cherry-picking-sand.gif) | ![Cherry-picking-disturb](/assets/img/20221001-cherry-picking-disturb.gif)
+
+<br>
+
+
+We started the project in 2019 winter. We have been experimenting with imitation learning, reinforcement learning, offline RL, and control algorithms.
+
 
 <br>
 
