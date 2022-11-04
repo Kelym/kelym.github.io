@@ -19,13 +19,13 @@ published: true
         <span class="projauthor">{{ proj.author}}</span> <br>
         <p class="projvenue">{{ proj.venue}} {{ proj.year }}</p>
         <div class='projbutton'>
-          {% if proj.page %} | <a href="{{proj.page}}" target="_blank">project webpage</a> {% endif %}
           <a href="javascript:toggleblock('{{proj.bibname}}-abs')">summary</a>
-          {% if proj.bibtype %} | <a href="javascript:toggleblock('{{proj.bibname}}-bib')">bibtex</a> {% endif %}
+          {% if proj.page %} | <a href="{{proj.page}}" target="_blank">website</a> {% endif %}
           {% if proj.arxiv %} | <a href="{{proj.arxiv}}" target="_blank">arXiv</a> {% endif %}
           {% if proj.pdf %} | <a href="{{proj.pdf}}" target="_blank">PDF</a> {% endif %}
           {% if proj.code %} | <a href="{{proj.code}}" target="_blank">code</a> {% endif %}
           {% if proj.poster %} | <a href="{{site.url}}/assets/download/{{proj.poster}}" target="_blank">poster</a> {% endif %}
+          {% if proj.bibtype %} | <a href="javascript:toggleblock('{{proj.bibname}}-bib')">bibtex</a> {% endif %}
         </div>
         <p class='abstract'>
             <span id='{{proj.bibname}}-abs' style="display:none;"> {{proj.excerpt}}</span>
