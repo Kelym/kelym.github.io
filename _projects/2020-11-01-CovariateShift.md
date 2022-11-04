@@ -1,7 +1,9 @@
 ---
 image: 20201101-chopsticks-grasping.jpg
 title: Grasping with Chopsticks&#58; Combating Covariate Shift in Model-free Imitation Learning for Fine Manipulation
-excerpt: Can you use chopsticks to grasp tiny balls? The radius of the ball is 7mm or 10mm. So, if you miss the grasping point by 0.5mm, the task would fail. We actually teach a robot to use chopsticks to autonomously grasp these tiny objects at 80% success rate, comparable to human expert performance of 82.6%. We do so by imitation learning and by proposing three novels approaches to combat covariate shift in imitation leanring.
+excerpt: >
+ Can you use chopsticks to grasp tiny balls :crystal_ball:? <br>
+ The radius of the ball is 7mm or 10mm. So, if you miss the grasping point by 0.5mm, the task would fail. We taught a robot to use chopsticks to autonomously grasp these tiny objects at 80% success rate, comparable to human expert performance of 82.6%. We do so by imitation learning and by proposing three novels approaches to combat covariate shift in imitation leanring.
 author: <b>Liyiming Ke</b>, Jingqiang Wang, Tapomayukh Bhattacharjee, Byron Boots, Siddhartha S. Srinivasa
 venue: ICRA
 year: 2021
