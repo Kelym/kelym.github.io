@@ -28,7 +28,7 @@ published: true
           {% if proj.bibtype %} | <a href="javascript:toggleblock('{{proj.bibname}}-bib')">bibtex</a> {% endif %}
         </div>
         <p class='abstract'>
-            <span id='{{proj.bibname}}-abs' style="display:block;"> {{proj.excerpt}}</span>
+            <span id='{{proj.bibname}}-abs' style="display:none;"> {{proj.excerpt}}</span>
         </p>
         {% if proj.bibtype %}
         <pre xml:space='preserve' class='bib' id='{{proj.bibname}}-bib' style="display:none;">@{{proj.bibtype}}&#123;{{proj.bibname}},
