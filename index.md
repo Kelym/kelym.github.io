@@ -37,3 +37,14 @@ This blog was created on Sep 2017, when I entered grad school. I got my insprati
 You can reach me at ```kayke@uw.edu```.
 
 ![Kay in Seattle, Washington. Apr 2020.](/assets/img/20190405-k.jpg){:height="360" .center-image }*"At home during coronavirus lockdown" Seattle, USA. Apr 2020*
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRYQ3GG5Y8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WRYQ3GG5Y8');
+</script>
