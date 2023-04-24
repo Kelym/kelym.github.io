@@ -4,7 +4,8 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a grad student at University of Washington working with [Siddhartha Srinivasa](https://goodrobot.ai/) and [Byron Boots](https://homes.cs.washington.edu/~bboots/). I am passionate about Robots :robot:, Imitation Learning and Reinforcement Learning.
+Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a grad student at University of Washington supervised by [Siddhartha Srinivasa](https://goodrobot.ai/). I am passionate about Robots :robot:, Imitation Learning and Reinforcement Learning. I have been very fortunate enough to work with [Abhishek Gupta](https://homes.cs.washington.edu/~abhgupta/), [Tapomayukh Bhattacharjee](https://robotics.cornell.edu/faculty/tapomayukh-bhattacharjee-bio/), [Byron Boots](https://homes.cs.washington.edu/~bboots/) and [Sanjiban Choudary](https://sanjibanchoudhury.com/). 
+
 
 
 ## Ongoing Project
