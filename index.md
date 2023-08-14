@@ -10,7 +10,7 @@ Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a grad student at Unive
 
 ## Ongoing Project
 
-<center style="font-family: georgia"><b>T</b>hank-<b>Y</b>ou-<b>CHO</b>pstick "TYCHO" project
+<center style="font-family: georgia"><b>T</b>each-<b>Y</b>our-<b>CHO</b>pstick "TYCHO" project
     <br> <span></span> = robot + chopstick
     <br> <span></span> = picking up challenging items!
 </center>
