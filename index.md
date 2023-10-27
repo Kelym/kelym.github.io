@@ -4,28 +4,26 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a final-year grad student at University of Washington, advised by [Siddhartha Srinivasa](https://goodrobot.ai/). I am passionate about Robotics Learning :robot:. My research focuses on Data-Driven Fine Manipulation. 
+Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a final-year grad student at University of Washington, advised by [Siddhartha Srinivasa](https://goodrobot.ai/). I research on Robotics :robot: Learning, with a focus on **Data-Driven Fine Manipulation**. 
+
+_I am on job market as of 2023 Fall._
 
 ### System and Demos
 
-I built [a chopsticks robot](https://goodcherrybot.github.io/) as a test-bed for fine manipulation.
+I built [a chopsticks robot](https://goodcherrybot.github.io/) as a test-bed for pushing the limit of fine manipulation.
 
 Grasping in unstable regime             |  Grasping with dynamic disturbance
 :-------------------------:|:-------------------------:
 ![Cherry-picking-sand](/assets/img/20221001-cherry-picking-sand.gif) | ![Cherry-picking-disturb](/assets/img/20221001-cherry-picking-disturb.gif)
 
-<div class="embed-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/32Q2xVl5j_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Theory and Frameworks
 
-I have also developed some theory for [f-divergence imitation learning](https://arxiv.org/abs/1905.12888) and [leveraging local-continuity in dynamics](https://arxiv.org/pdf/2310.12972).
+I have also developed theories for [f-divergence imitation learning](https://arxiv.org/abs/1905.12888) and [leveraging local-continuity in dynamics](https://arxiv.org/pdf/2310.12972).
 
 ### Kudos
 
 I was very fortunate to work with [Abhishek Gupta](https://homes.cs.washington.edu/~abhgupta/), [Tapomayukh Bhattacharjee](https://robotics.cornell.edu/faculty/tapomayukh-bhattacharjee-bio/), [Byron Boots](https://homes.cs.washington.edu/~bboots/) and [Sanjiban Choudary](https://sanjibanchoudhury.com/). 
-
-I am on job market as of 2023 Fall.
 
 
 <!-- Google tag (gtag.js) -->
