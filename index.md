@@ -10,7 +10,11 @@ As a test-bed for pushing the limit of fine manipulation, I built [a chopsticks 
 
 I was very fortunate to work with [Abhishek Gupta](https://homes.cs.washington.edu/~abhgupta/), [Tapomayukh Bhattacharjee](https://robotics.cornell.edu/faculty/tapomayukh-bhattacharjee-bio/), [Byron Boots](https://homes.cs.washington.edu/~bboots/) and [Sanjiban Choudary](https://sanjibanchoudhury.com/).
 
-**I am on job market as of 2023 Fall.!!**
+<br>
+
+**I am looking for a faculty position as of 2023 Fall!!**
+
+<br>
 
 Grasping in unstable regime             |  Grasping with dynamic disturbance
 :-------------------------:|:-------------------------:
