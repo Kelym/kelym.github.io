@@ -6,24 +6,15 @@ layout: home
 ---
 Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a final-year grad student at University of Washington, advised by [Siddhartha Srinivasa](https://goodrobot.ai/). I research on Robotics :robot: Learning, with a focus on **Data-Driven Fine Manipulation**. 
 
-_I am on job market as of 2023 Fall._
+As a test-bed for pushing the limit of fine manipulation, I built [a chopsticks robot](https://goodcherrybot.github.io/) to showcase the _precision_ and _dynamic reactivity_ of systems trained via reinforcement learning. I have also developed theories for [f-divergence framework for imitation learning and adversarial imitation learning](https://arxiv.org/abs/1905.12888) and [leveraging local-continuity in dynamics](https://arxiv.org/pdf/2310.12972).
 
-### System and Demos
+I was very fortunate to work with [Abhishek Gupta](https://homes.cs.washington.edu/~abhgupta/), [Tapomayukh Bhattacharjee](https://robotics.cornell.edu/faculty/tapomayukh-bhattacharjee-bio/), [Byron Boots](https://homes.cs.washington.edu/~bboots/) and [Sanjiban Choudary](https://sanjibanchoudhury.com/).
 
-I built [a chopsticks robot](https://goodcherrybot.github.io/) as a test-bed for pushing the limit of fine manipulation.
+**I am on job market as of 2023 Fall.!!**
 
 Grasping in unstable regime             |  Grasping with dynamic disturbance
 :-------------------------:|:-------------------------:
 ![Cherry-picking-sand](/assets/img/20221001-cherry-picking-sand.gif) | ![Cherry-picking-disturb](/assets/img/20221001-cherry-picking-disturb.gif)
-
-
-### Theory and Frameworks
-
-I have also developed theories for [f-divergence imitation learning](https://arxiv.org/abs/1905.12888) and [leveraging local-continuity in dynamics](https://arxiv.org/pdf/2310.12972).
-
-### Kudos
-
-I was very fortunate to work with [Abhishek Gupta](https://homes.cs.washington.edu/~abhgupta/), [Tapomayukh Bhattacharjee](https://robotics.cornell.edu/faculty/tapomayukh-bhattacharjee-bio/), [Byron Boots](https://homes.cs.washington.edu/~bboots/) and [Sanjiban Choudary](https://sanjibanchoudhury.com/). 
 
 
 <!-- Google tag (gtag.js) -->
