@@ -6,7 +6,7 @@ layout: home
 ---
 Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a final-year grad student at University of Washington, advised by [Siddhartha Srinivasa](https://goodrobot.ai/). I research on Robotics :robot: Learning, with a focus on **Data-Driven Fine Manipulation**. 
 
-As a test-bed for pushing the limit of fine manipulation, I built [a chopsticks robot](https://goodcherrybot.github.io/) to showcase the _precision_ and _dynamic reactivity_ of systems trained via reinforcement learning. I have also developed theories for [f-divergence framework for imitation learning and adversarial imitation learning](https://arxiv.org/abs/1905.12888) and [leveraging local-continuity in dynamics](https://arxiv.org/pdf/2310.12972).
+As a test-bed for pushing the limit of fine manipulation, I built [a chopsticks robot](https://goodcherrybot.github.io/) to showcase the _precision_ and _dynamic reactivity_ of systems trained via reinforcement learning. I have also developed theories like [f-divergence framework for imitation learning and adversarial imitation learning](https://arxiv.org/abs/1905.12888) and [leveraging local-continuity in dynamics](https://arxiv.org/pdf/2310.12972).
 
 I was very fortunate to work with [Abhishek Gupta](https://homes.cs.washington.edu/~abhgupta/), [Tapomayukh Bhattacharjee](https://robotics.cornell.edu/faculty/tapomayukh-bhattacharjee-bio/), [Byron Boots](https://homes.cs.washington.edu/~bboots/) and [Sanjiban Choudary](https://sanjibanchoudhury.com/).
 
