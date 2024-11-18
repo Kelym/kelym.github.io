@@ -1,0 +1,640 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Google analytics tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRYQ3GG5Y8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-STGLQW4BJX');
+
+    function toggleExcerpt(elementId) {
+      const excerptDiv = document.getElementById(elementId);
+      if (excerptDiv.style.display === "none") {
+        excerptDiv.style.display = "block";
+      } else {
+        excerptDiv.style.display = "none";
+      }
+    }
+  </script>
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- Title -->
+  <title>Kay - Physical Intelligence</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1000">
+
+  <!-- Isotope JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+  </style>
+</head>
+
+<body id="body">
+
+  <div id="main">
+    <div id="intro">
+      <div id="intro-text">
+        <h1>Kay - Liyiming Ke</h1>
+        <p>
+          Hi 👋 I am a researcher at <a href="https://www.physicalintelligence.company/">Physical Intelligence</a>,
+          working on Machine Learning for Robot Manipulation. I completed my PhD at University of Washington building a
+          chopsticks-welding robot. I have a heart of explorer, did my undergrad in Economics and previoulsy interned at
+          MetaAI, Microsoft Research, and Google Search. These days I am trygin to teach robot policies to
+          improve Robustness, Precision, and Dexterity.
+          <br><br>
+          <!-- In PhD program:
+            Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a final-year grad student at University of Washington, advised by [Siddhartha Srinivasa](https://goodrobot.ai/). I research on Robotics :robot: Learning, with a focus on **Data-Driven Fine Manipulation**.
+            As a test-bed for pushing the limit of fine manipulation, I built [a chopsticks robot](https://goodcherrybot.github.io/) to showcase the _precision_ and _dynamic reactivity_ of systems trained via reinforcement learning. I have also developed theories like [f-divergence framework for imitation learning and adversarial imitation learning](https://arxiv.org/abs/1905.12888) and [leveraging local-continuity in dynamics](https://arxiv.org/pdf/2310.12972).
+            I was very fortunate to work with [Abhishek Gupta](https://homes.cs.washington.edu/~abhgupta/), [Tapomayukh Bhattacharjee](https://robotics.cornell.edu/faculty/tapomayukh-bhattacharjee-bio/), [Byron Boots](https://homes.cs.washington.edu/~bboots/) and [Sanjiban Choudary](https://sanjibanchoudhury.com/).
+          -->
+        <div id="more-bio" style="display: None">
+          <br>
+          <p>Liyiming Ke is a full stack robotist at Physical Intelligence researching on Machine Learning for Robot
+            Manipulation. She earned her Ph.D. from the University of Washington with her thesis titled "Data-driven
+            Fine Manipulation". She built a chopsticks-welding robot that demonstrate fine motor skills and developed
+            theoretical frameworks for robot learning. She has led human-robot interactive demonstration at AAAS in 2020
+            and has been selected as one of the Rising Stars in EECS 2023.</p>
+        </div>
+        <br>
+        <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://scholar.google.com/citations?user=35KZZ-kAAAAJ&hl=en">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/kelym">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/kelym/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://x.com/xkelym">Twitter</a>
+        <br><br>
+        kay at workplace dot company
+        <br><br>
+        </p>
+      </div>
+      <div id="intro-image">
+        <img src="images/profile.jpg">
+      </div>
+    </div>
+
+    <div id="filters" class="button-group">
+      <!-- <button class="button" data-filter="*">Show All</button> -->
+      <button class="button is-checked" data-filter=".highlight">Highlights</button>
+      <button class="button" data-filter=".publication">Research</button>
+      <button class="button" data-filter=".talk">Talks</button>
+      <button class="button" data-filter=".misc">Misc</button>
+    </div>
+
+    <div class="grid">
+
+      <!-- Highlights -->
+      <div class="list-item highlight description" data-category="highlight">
+        <!-- Some recent highlights from our research:-->
+      </div>
+
+      <!-- Preview Videos -->
+      <div class="list-item highlight previews" data-category="highlight">
+
+        <a href="https://personalrobotics.github.io/CCIL/"><video class="preview3" playsinline="" muted="" autoplay=""
+            loop="">
+            <source src="images/20241101-ccil-applied.mp4" type="video/mp4">
+          </video></a>
+
+        <a href="https://www.physicalintelligence.company/blog/pi0"><video class="preview1" playsinline="" muted=""
+            autoplay="" loop="">
+            <source src="images/20241101-pizero_bussing_trashpile.mp4" type="video/mp4">
+          </video></a>
+
+        <a href="https://goodcherrybot.github.io/"><video class="preview2" playsinline="" muted="" autoplay="" loop="">
+            <source src="images/20230315-cherrybot-granola_retry.mp4" type="video/mp4">
+          </video></a>
+
+      </div>
+
+      <!-- Truncated Set of Highlights (Shown by Default) -->
+      <div id="main-highlights">
+        <!--
+        <div class="list-item highlight" data-category="highlight">
+          <b>some place</b> <a href="some link">some award</a>
+        </div>
+        -->
+      </div>
+
+      <!-- All Archived Highlights (Click to Show) -->
+      <div id="more-highlights" style="display: None">
+
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date">2024</p> <a href="https://personalrobotics.github.io/CCIL/">Can we improve robustness of
+            Imitation Learning by generating synthetic corrective labels?</a>
+        </div>
+
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date">2024</p> <a href="https://www.physicalintelligence.company/blog/pi0">Can imitation learning
+            benefits from large-scale pre-training on diverse task and robot embodiment?</a>
+        </div>
+
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date">2023</p> <a href="https://goodcherrybot.github.io/">Can we learn fine motor
+            skills like picking up cherries with chopsticks using reinforcement learning?</a>
+        </div>
+
+        <div class="list-item highlight" data-category="highlight">
+          <p class="date">2020</p> <a href="https://arxiv.org/abs/1905.12888">Viewing imitation learning from the frame
+            of
+            divergence minimization</a>
+        </div>
+
+        <!-- <div class="list-item highlight" data-category="highlight">
+          <p class="date">Year</p> Stuff <a href="link">link</a>
+        </div> -->
+
+      </div>
+
+      <!-- Toggle highlights button. -->
+      <div class="list-item highlight toggle-button" data-category="highlight">
+        <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
+      </div>
+
+
+
+
+      <!-- Publications -->
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://www.physicalintelligence.company/blog/pi0" class="thumbnail">
+          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+            <source src="images/20241101-pizero.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div class="project-description">
+          <h3><a href="https://www.physicalintelligence.company/blog/pi0">&#960;0: A Vision-Language-Action Flow
+              Model for
+              General Robot Control</a></h3>
+          <p>
+            Kevin Black, Noah Brown, Danny Driess, Adnan Esmail, Michael Equi, Chelsea Finn, Niccolo Fusai,
+            Lachy Groom, Karol Hausman, Brian Ichter, Szymon Jakubczak, Tim Jones, <b>Liyiming Ke</b>, Sergey Levine,
+            Adrian Li-Bell, Mohith Mothukuri, Suraj Nair, Karl Pertsch, Lucy Xiaoyang Shi, James Tanner, Quan Vuong,
+            Anna Walling, Haohuan Wang, Ury Zhilinsky<br>
+            <!--<i>Venue 2024</i><br>-->
+            <a href="https://www.physicalintelligence.company/download/pi0.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                Can you train cross-embodiment robotic policies over many many tasks and expect it to work? We show that
+                it is promising: a big pre-training model can be finetuned on a single task and outperform
+                dedicated policy that has only seen task-specific data.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://arxiv.org/abs/2410.20254" class="thumbnail">
+          <img src="images/20241101-sim2real.jpg" alt="" />
+        </a>
+        <div class="project-description">
+          <h3><a href="https://arxiv.org/abs/2410.20254">Overcoming the Sim-to-Real Gap: Leveraging Simulation to Learn
+              to Explore for Real-World RL</a></h3>
+          <p>
+            Andrew Wagenmaker, Kevin Huang, <b>Liyiming Ke</b>, Byron Boots, Kevin Jamieson, Abhishek Gupta<br>
+            <i>NeurIPS 2024</i><br>
+            <a href="https://arxiv.org/abs/2410.20254">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                We show that, learning an exploration policy in simulation can boost the real-world reinforcement
+                learning
+                finetuning efficiency (versus learning an optimal policy in the sim and transfer the policy).
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://arxiv.org/abs/2405.19307" class="thumbnail">
+          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+            <source src="images/20241101-ccil-applied.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div class="project-description">
+          <h3><a href="https://arxiv.org/abs/2405.19307">Data Efficient Behavior Cloning for Fine Manipulation via
+              Continuity-based Corrective Labels</a></h3>
+          <p>
+            Abhay Deshpande, <b>Liyiming Ke</b>, Quinn Pfeifer, Abhishek Gupta, Siddhartha S. Srinivasa<br>
+            <i>In submission 2024</i><br>
+            <a href="https://personalrobotics.github.io/CCIL/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://arxiv.org/abs/2405.19307">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                We apply CCIL to real world robotic manipulation tasks and it kinda worked after some design tweak. The
+                most juice comes from setting up trust threshold for the generated labels in a task-agnostic way.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://arxiv.org/abs/2310.12972v1" class="thumbnail">
+          <img src="images/20231019-ccil.png" alt="" />
+        </a>
+        <div class="project-description">
+          <h3><a href="https://arxiv.org/abs/2310.12972v1">CCIL: Continuity-based Data Augmentation for Corrective
+              Imitation Learning</a></h3>
+          <p>
+            <b>Liyiming Ke*</b>, Yunchu Zhang*, Abhay Deshpande, Siddhartha Srinivasa, Abhishek Gupta<br>
+            <i>International Conference on Learning Representations (ICLR) 2024</i><br>
+            <a href="https://personalrobotics.github.io/CCIL/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://github.com/personalrobotics/CCIL">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://arxiv.org/abs/2310.12972v1">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                Enhances robustness of imitation learning by generating synthetic corrective labels:
+                The trick is to leverage local continuity in the environment dynamics - and for regions that are
+                discontinuous, quantify the confidence and skip them.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://goodcherrybot.github.io/" class="thumbnail">
+          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+            <source src="images/20230315-cherry-picking.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div class="project-description">
+          <h3><a href="https://goodcherrybot.github.io/">Cherry Picking with Reinforcement Learning</a></h3>
+          <p>
+            Yunchu Zhang*, <b>Liyiming Ke*</b>, Abhay Deshpande, Abhishek Gupta, Siddhartha Srinivasa<br>
+            <i>Robotics Science and Systems (RSS) 2023</i><br>
+            <a href="https://goodcherrybot.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://arxiv.org/abs/2303.05508">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                Use reinforcement learning to learn fine motor skills: pick up slippery cherries with chopsticks under
+                wind or human disturbances. And I refuse to do parameter sweeping or random seed cherry picking.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://sites.google.com/view/real-orl" class="thumbnail">
+          <img src="images/20220930-real-offlinerl.png" alt="" />
+        </a>
+        <div class="project-description">
+          <h3><a href="https://sites.google.com/view/real-orl">Real World Offline Reinforcement Learning with Realistic
+              Data Sources</a></h3>
+          <p>
+            Gaoyue Zhou*, <b>Liyiming Ke*</b>, Siddhartha Srinivasa, Abhinav Gupta, Aravind Rajeswaran, Vikash Kumar<br>
+            <i>IEEE International Conference on Robotics and Automation (ICRA) 2023</i><br>
+            <a href="https://sites.google.com/view/real-orl">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://arxiv.org/abs/2210.06479">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                Eval offline RL in real-world: emphasize on data being "kinda good" but not perfect.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://personalrobotics.cs.washington.edu/publications/ke2021grasping.pdf" class="thumbnail">
+          <img src="images/20201101-chopsticks-grasping.jpg" alt="" />
+        </a>
+        <div class="project-description">
+          <h3><a href="https://personalrobotics.cs.washington.edu/publications/ke2021grasping.pdf">Grasping with
+              Chopsticks: Combating Covariate Shift in Model-free Imitation Learning for Fine Manipulation</a></h3>
+          <p>
+            <b>Liyiming Ke</b>, Jingqiang Wang, Tapomayukh Bhattacharjee, Byron Boots, Siddhartha S. Srinivasa<br>
+            <i>IEEE International Conference on Robotics and Automation (ICRA) 2021</i><br>
+            <a href="https://arxiv.org/abs/2011.06719">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                Teach a robot to use chopsticks for precise manipulation tasks through human demonstrations: Addresses
+                covariate shift in imitation learning by noise-injection, object-centric transformation and
+                bunch of hacks.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://personalrobotics.cs.washington.edu/publications/ke2020teleop.pdf" class="thumbnail">
+          <img src="images/20200630-chopsticks-teleop.gif" alt="" />
+        </a>
+        <div class="project-description">
+          <h3><a href="https://personalrobotics.cs.washington.edu/publications/ke2020teleop.pdf">Telemanipulation with
+              Chopsticks: Analyzing Human Factors in User Demonstrations</a></h3>
+          <p>
+            <b>Liyiming Ke</b>, Ajinkya Kamat, Jingqiang Wang, Tapomayukh Bhattacharjee, Christoforos Mavrogiannis,
+            Siddhartha S. Srinivasa<br>
+            <i>IEEE International Conference on Intelligent Robots and Systems (IROS) 2020</i><br>
+            <a href="https://arxiv.org/abs/2008.00101">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                Built a chopsticks robot and a fun human-interactive demo collection interface: turns out that tracking
+                a
+                wand and commmand the robot can be really easy.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://arxiv.org/abs/1905.12888" class="thumbnail">
+          <img src="images/20190608-fimitation-teaser.png" alt="" />
+        </a>
+        <div class="project-description">
+          <h3><a href="https://arxiv.org/abs/1905.12888">Imitation Learning as f-Divergence Minimization</a></h3>
+          <p>
+            <b>Liyiming Ke</b>, Sanjiban Choudhury, Matt Barnes, Wen Sun, Gilwoo Lee, Siddhartha Srinivasa<br>
+            <i>International Workshop on the Algorithmic Foundations of Robotics (WAFR) 2020</i><br>
+            <a href="https://arxiv.org/abs/1905.12888">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                A unified theoretical framework for imitation learning! Turns out some SOTA algorithms are using
+                f-divergence. We show how different divergence measures lead to different imitation learning approaches.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Ke_Tactical_Rewind_Self-Correction_via_Backtracking_in_Vision-And-Language_Navigation_CVPR_2019_paper.html"
+          class="thumbnail">
+          <img src="images/20190607-vln-teaser.png" alt="" />
+        </a>
+        <div class="project-description">
+          <h3><a
+              href="http://openaccess.thecvf.com/content_CVPR_2019/html/Ke_Tactical_Rewind_Self-Correction_via_Backtracking_in_Vision-And-Language_Navigation_CVPR_2019_paper.html">Tactical
+              Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation</a></h3>
+          <p>
+            <b>Liyiming Ke</b>, Xiujun Li, Yonatan Bisk, Ari Holtzman, Zhe Gan, Jingjing Liu, Jianfeng Gao, Yejin Choi,
+            Siddhartha Srinivasa<br>
+            <i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019</i><br>
+            <font color="49bf9"><i>&#9733; Oral Presentation, CVPR (5.6%) &#9733;</i></font><br>
+            <a href="https://arxiv.org/abs/1903.02547">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                Baking Search and Planning into ML-based navigation: We propose a new framework for VL navigation,
+                enabling agents to recover from mistakes by maintaining internal search tree and returning to previous
+                positions and trying alternative
+                paths.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/10061" class="thumbnail">
+          <img src="images/20160101-email-teaser.png" alt="" />
+        </a>
+        <div class="project-description">
+          <h3><a href="https://ojs.aaai.org/index.php/AAAI/article/view/10061">Behavioral Experiments in Email Filter
+              Evasion</a></h3>
+          <p>
+            <b>Liyiming Ke</b>, Bo Li, Yevgeniy Vorobeychik<br>
+            <i>AAAI Conference on Artificial Intelligence (AAAI) 2016</i><br>
+            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/10061">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#">Summary</a>
+              <span class="excerpt-content">
+                Studies how humans attempt to evade email spam filters.
+                Provides insights into adversarial behavior and implications for security system design.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Talks -->
+      <!-- <div class="list-item talk description" data-category="talk">
+          Some of my slides can be found <a href="https://slides.com/andyzeng">here</a>
+        </div> -->
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date">2024</p>OpenAI Reading Group
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date"></p>University of Washington, Robotics Seminar (<a
+          href="https://www.youtube.com/watch?v=LeHYQVR8a8k">video</a>)
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date">2023</p>Stanford University, <a href="https://iliad.stanford.edu/">ILIAD Lab</a>
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date"></p>University of California Berkeley, <a href="https://bair.berkeley.edu/">BAIR Lab</a>
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date"></p>Carnegie Mellon University, <a href="https://www.cs.cmu.edu/~cga/">Atkeson Lab</a>
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date"></p>Shanghai Jiaotong University, <a href="https://automation.sjtu.edu.cn/">Department of
+          Automation</a>
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date"></p>Stanford University, <a href="https://iprl.stanford.edu/">Interactive Perception and Robot
+          Learning Lab</a>
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date">2022</p>Cornell University, <a href="https://emprise.cs.cornell.edu/">EmPRISE
+          Lab</a>
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date"></p> <a href="https://mila.quebec/en/">Mila - Quebec AI Institute</a> (<a
+          href="https://www.youtube.com/watch?v=LeHYQVR8a8k">video</a>)
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date">2021</p>MetaAI Reading Group
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date">2018</p>Microsoft Research Dialogue Group Reading Group
+      </div>
+
+
+      <!-- Services -->
+
+
+      <div class="list-item misc" data-category="misc">
+        <p class="date"> </p>Reviewer of AAMAS, CoRL, HRI, ICLR, ICRA, IJRR, IROS, NeurIPS, RA-L
+      </div>
+
+      <div class="list-item misc" data-category="misc">
+        <p class="date">2023</p>Honored to be selected as one of the <a
+          href="https://www.eecs.mit.edu/community-equity/rising-stars-in-eecs/">Rising Stars in EECS</a>
+      </div>
+
+      <div class="list-item misc" data-category="misc">
+        <p class="date">2020</p>Chopsticks Robot featured on <a
+          href="https://spectrum.ieee.org/video-friday-agility-robotics-robot-production">IEEE Spectrum Video
+          Friday</a>
+      </div>
+
+      <div class="list-item misc" data-category="misc">
+        <p class="date">2020</p>Led a human-robot interactive demo at the <a
+          href="https://www.aaas.org/events/2020-aaas-annual-meeting">AAAS
+          gathering</a>
+      </div>
+
+      <div class="list-item misc" data-category="misc">
+        <p class="date">2017</p>Graduated as one of the <a href="https://my.vanderbilt.edu/collegescholars/">Honor
+          Scholars</a> from Vanderbilt University
+      </div>
+
+      <div class="list-item misc" data-category="misc">
+        <p class="date">2015</p>First prize in the Vanderbilt Student Consulting for Non-profit Organization
+      </div>
+
+      <div class="list-item misc" data-category="misc">
+        <p class="date"> - </p>Inspired by:
+        <ul
+          style="margin-top: 5px; margin-bottom: 0px; margin-left: 0px; list-style-type: none; padding-left: 0; display: inline;">
+          <li style="display: inline;"><a href="https://distill.pub/">Distill</a></li>
+          <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
+          <li style="display: inline;"><a href="https://colah.github.io/">Colah's Blog</a></li>
+          <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
+          <li style="display: inline;"><a href="http://neuralnetworksanddeeplearning.com/">Michael Nielsen</a></li>
+          <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
+          <li style="display: inline;"><a href="https://karpathy.github.io/">Andrej Karpathy</a></li>
+          <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
+          <li style="display: inline;"><a href="https://danielseita.github.io/">Seita's Place</a></li>
+          <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
+          <li style="display: inline;"><a href="https://www.ruder.io/">Sebastian Ruder</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div id="footer">
+      Website template by <a href="https://andyzeng.github.io/">Andy Zeng</a> and <a
+        href="https://jonbarron.info/">Jon's
+        website</a>.
+    </div>
+
+  </div>
+
+  <script>
+
+    // Isotope grid.
+    var $grid = $('.grid').isotope({
+      itemSelector: '.list-item',
+      layoutMode: 'fitRows',
+      transitionDuration: 0,
+      stagger: 10,
+      initLayout: false,
+      getSortData: {
+        name: '.name',
+        symbol: '.symbol',
+        number: '.number parseInt',
+        category: '[data-category]',
+        weight: function (itemElem) {
+          var weight = $(itemElem).find('.weight').text();
+          return parseFloat(weight.replace(/[\(\)]/g, ''));
+        }
+      }
+    });
+
+    // Bind filter button click.
+    $('#filters').on('click', 'button', function () {
+      var filterValue = $(this).attr('data-filter');
+      localStorage.setItem('filterValue', filterValue);
+      $grid.isotope({ filter: filterValue });
+    });
+
+    // Change is-checked class on buttons.
+    $('.button-group').each(function (i, buttonGroup) {
+      var $buttonGroup = $(buttonGroup);
+      $buttonGroup.on('click', 'button', function () {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+    });
+
+    function update_isotope() {
+      // Retrieve cached button click.
+      var defaultFilterValue = localStorage.getItem('filterValue');
+      if (defaultFilterValue == null) {
+        defaultFilterValue = ".highlight"
+      }
+      $grid.isotope({ filter: defaultFilterValue });
+      var buttons = document.getElementsByClassName("button");
+      for (var currButton of buttons) {
+        if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+          currButton.classList.add('is-checked');
+        } else {
+          currButton.classList.remove('is-checked');
+        }
+      }
+    }
+
+    function toggle_bio() {
+      var x = document.getElementById("more-bio");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function toggle_highlights() {
+      var x = document.getElementById("main-highlights");
+      var y = document.getElementById("more-highlights");
+      var b = document.getElementById("toggle_highlights_button")
+      if (y.style.display === "none") {
+        x.style.display = "none";
+        y.style.display = "block";
+        b.innerHTML = "Show less"
+        update_isotope();
+      } else {
+        x.style.display = "block";
+        y.style.display = "none";
+        b.innerHTML = "Show more"
+        update_isotope();
+      }
+    }
+
+    update_isotope();
+
+  </script>
+</body>
+
+</html>
