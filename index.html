@@ -108,17 +108,32 @@
       <!-- Preview Videos -->
       <div class="list-item highlight previews" data-category="highlight">
 
-        <a href="https://personalrobotics.github.io/CCIL/"><video class="preview3" playsinline="" muted="" autoplay=""
+        <a href="https://goodcherrybot.github.io/"><video class="preview1" playsinline="" muted="" autoplay="" loop="">
+            <source src="images/20250330-pi05-makebed.mp4" type="video/mp4">
+          </video></a>
+
+        <a href="https://goodcherrybot.github.io/"><video class="preview2" playsinline="" muted="" autoplay="" loop="">
+            <source src="images/20250330-pi05-putsink.mp4" type="video/mp4">
+          </video></a>
+
+        <a href="https://goodcherrybot.github.io/"><video class="preview3" playsinline="" muted="" autoplay="" loop="">
+            <source src="images/20250110-hirobot.mp4" type="video/mp4">
+          </video></a>
+
+      </div>
+      <div class="list-item highlight previews" data-category="highlight">
+
+        <a href="https://personalrobotics.github.io/CCIL/"><video class="preview1" playsinline="" muted="" autoplay=""
             loop="">
             <source src="images/20241101-ccil-applied.mp4" type="video/mp4">
           </video></a>
 
-        <a href="https://www.physicalintelligence.company/blog/pi0"><video class="preview1" playsinline="" muted=""
+        <a href="https://www.physicalintelligence.company/blog/pi0"><video class="preview2" playsinline="" muted=""
             autoplay="" loop="">
             <source src="images/20241101-pizero_bussing_trashpile.mp4" type="video/mp4">
           </video></a>
 
-        <a href="https://goodcherrybot.github.io/"><video class="preview2" playsinline="" muted="" autoplay="" loop="">
+        <a href="https://goodcherrybot.github.io/"><video class="preview3" playsinline="" muted="" autoplay="" loop="">
             <source src="images/20230315-cherrybot-granola_retry.mp4" type="video/mp4">
           </video></a>
 
@@ -174,6 +189,70 @@
       <!-- Publications -->
 
       <div class="list-item publication" data-category="publication">
+        <a href="https://www.pi.website/blog/pi05" class="thumbnail">
+          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+            <source src="images/20250330-pi05-makebed.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div class="project-description">
+          <h3><a href="https://www.pi.website/blog/pi05">&#960;0.5: A Vision-Language-Action
+              Model with Open World Generalization</a></h3>
+          <p>
+            Kevin Black, Noah Brown, James Darpinian, Karan Dhabalia, Danny Driess, Adnan Esmail, Michael Equi, Chelsea
+            Finn, Niccolo Fusai, Manuel Y Galliker, Dibya Ghosh, Lachy Groom, Karol Hausman, Brian Ichter, Szymon
+            Jakubczak, Tim Jones, <b>Liyiming Ke</b>, Devin LeBlanc, Sergey Levine, Adrian Li-Bell, Mohith Mothukuri,
+            Suraj Nair, Karl Pertsch, Allen Z Ren, Lucy Xiaoyang Shi, Laura Smith, Jost Tobias Springenberg, Kyle
+            Stachowicz, James Tanner, Quan Vuong, Homer Walke, Anna Walling, Haohuan Wang, Lili Yu, Ury Zhilinsky<br>
+            <!--<i>CoRL 2025</i><br>-->
+            <a href="https://www.physicalintelligence.company/download/pi05.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#" onclick="event.preventDefault();">Summary</a>
+              <span class="excerpt-content">
+                We send mobile robots to many AirBnB houses to generalize tasks across diverse, real-world environments.
+                Our robots can perform some household chores like cleaning kitchens in unseen houses.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="list-item publication" data-category="publication">
+        <a href="https://www.physicalintelligence.company/research/hirobot" class="thumbnail">
+          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+            <source src="images/20250110-hirobot.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div class="project-description">
+          <h3><a href="https://www.physicalintelligence.company/research/hirobot">Hi Robot: Open-Ended Instruction
+              Following
+              with Hierarchical
+              Vision-Language-Action Models</a></h3>
+          <p>
+            Lucy Xiaoyang Shi, Brian Ichter, Michael Equi, <b>Liyiming Ke</b>, Karl Pertsch, Quan Vuong, James Tanner,
+            Anna Walling, Haohuan Wang, Niccolo Fusai, Adrian Li-Bell, Danny Driess, Lachy Groom, Sergey Levine, Chelsea
+            Finn<br>
+            <i>ICML 2025</i><br>
+            <a href="https://arxiv.org/abs/2502.19417">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <span class="excerpt-container">
+              <a href="#" onclick="event.preventDefault();">Summary</a>
+              <span class="excerpt-content">
+                We introduce a hierarchical system enabling robots to “think aloud” and deconstruct complex tasks ("make
+                me a sandwich") into
+                manageable steps ("pick up bread, pick up tomato, put tomato on the bread ..."). By combining a
+                low-level action
+                model for execution and a
+                high-level
+                vision-language model for reasoning and interaction with human inputs, we allow robots to follow complex
+                instructions and perform tasks with high
+                precision and adaptability.
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
         <a href="https://www.physicalintelligence.company/blog/pi0" class="thumbnail">
           <video playsinline="" muted="" autoplay="" loop="" width="180px">
             <source src="images/20241101-pizero.mp4" type="video/mp4">
@@ -188,10 +267,10 @@
             Lachy Groom, Karol Hausman, Brian Ichter, Szymon Jakubczak, Tim Jones, <b>Liyiming Ke</b>, Sergey Levine,
             Adrian Li-Bell, Mohith Mothukuri, Suraj Nair, Karl Pertsch, Lucy Xiaoyang Shi, James Tanner, Quan Vuong,
             Anna Walling, Haohuan Wang, Ury Zhilinsky<br>
-            <!--<i>Venue 2024</i><br>-->
+            <i>RSS 2025</i><br>
             <a href="https://www.physicalintelligence.company/download/pi0.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 Can you train cross-embodiment robotic policies over many many tasks and expect it to work? We show that
                 it is promising: a big pre-training model can be finetuned on a single task and outperform
@@ -214,7 +293,7 @@
             <i>NeurIPS 2024</i><br>
             <a href="https://arxiv.org/abs/2410.20254">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 We show that, learning an exploration policy in simulation can boost the real-world reinforcement
                 learning
@@ -236,11 +315,11 @@
               Continuity-based Corrective Labels</a></h3>
           <p>
             Abhay Deshpande, <b>Liyiming Ke</b>, Quinn Pfeifer, Abhishek Gupta, Siddhartha S. Srinivasa<br>
-            <i>In submission 2024</i><br>
+            <i>IROS 2024</i><br>
             <a href="https://personalrobotics.github.io/CCIL/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://arxiv.org/abs/2405.19307">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 We apply CCIL to real world robotic manipulation tasks and it kinda worked after some design tweak. The
                 most juice comes from setting up trust threshold for the generated labels in a task-agnostic way.
@@ -259,12 +338,12 @@
               Imitation Learning</a></h3>
           <p>
             <b>Liyiming Ke*</b>, Yunchu Zhang*, Abhay Deshpande, Siddhartha Srinivasa, Abhishek Gupta<br>
-            <i>International Conference on Learning Representations (ICLR) 2024</i><br>
+            <i>ICLR 2024</i><br>
             <a href="https://personalrobotics.github.io/CCIL/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://github.com/personalrobotics/CCIL">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://arxiv.org/abs/2310.12972v1">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 Enhances robustness of imitation learning by generating synthetic corrective labels:
                 The trick is to leverage local continuity in the environment dynamics - and for regions that are
@@ -285,11 +364,11 @@
           <h3><a href="https://goodcherrybot.github.io/">Cherry Picking with Reinforcement Learning</a></h3>
           <p>
             Yunchu Zhang*, <b>Liyiming Ke*</b>, Abhay Deshpande, Abhishek Gupta, Siddhartha Srinivasa<br>
-            <i>Robotics Science and Systems (RSS) 2023</i><br>
+            <i>RSS 2023</i><br>
             <a href="https://goodcherrybot.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://arxiv.org/abs/2303.05508">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 Use reinforcement learning to learn fine motor skills: pick up slippery cherries with chopsticks under
                 wind or human disturbances. And I refuse to do parameter sweeping or random seed cherry picking.
@@ -308,11 +387,11 @@
               Data Sources</a></h3>
           <p>
             Gaoyue Zhou*, <b>Liyiming Ke*</b>, Siddhartha Srinivasa, Abhinav Gupta, Aravind Rajeswaran, Vikash Kumar<br>
-            <i>IEEE International Conference on Robotics and Automation (ICRA) 2023</i><br>
+            <i>ICRA 2023</i><br>
             <a href="https://sites.google.com/view/real-orl">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://arxiv.org/abs/2210.06479">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 Eval offline RL in real-world: emphasize on data being "kinda good" but not perfect.
               </span>
@@ -330,10 +409,10 @@
               Chopsticks: Combating Covariate Shift in Model-free Imitation Learning for Fine Manipulation</a></h3>
           <p>
             <b>Liyiming Ke</b>, Jingqiang Wang, Tapomayukh Bhattacharjee, Byron Boots, Siddhartha S. Srinivasa<br>
-            <i>IEEE International Conference on Robotics and Automation (ICRA) 2021</i><br>
+            <i>ICRA 2021</i><br>
             <a href="https://arxiv.org/abs/2011.06719">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 Teach a robot to use chopsticks for precise manipulation tasks through human demonstrations: Addresses
                 covariate shift in imitation learning by noise-injection, object-centric transformation and
@@ -354,10 +433,10 @@
           <p>
             <b>Liyiming Ke</b>, Ajinkya Kamat, Jingqiang Wang, Tapomayukh Bhattacharjee, Christoforos Mavrogiannis,
             Siddhartha S. Srinivasa<br>
-            <i>IEEE International Conference on Intelligent Robots and Systems (IROS) 2020</i><br>
+            <i>IROS 2020</i><br>
             <a href="https://arxiv.org/abs/2008.00101">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 Built a chopsticks robot and a fun human-interactive demo collection interface: turns out that tracking
                 a
@@ -376,10 +455,10 @@
           <h3><a href="https://arxiv.org/abs/1905.12888">Imitation Learning as f-Divergence Minimization</a></h3>
           <p>
             <b>Liyiming Ke</b>, Sanjiban Choudhury, Matt Barnes, Wen Sun, Gilwoo Lee, Siddhartha Srinivasa<br>
-            <i>International Workshop on the Algorithmic Foundations of Robotics (WAFR) 2020</i><br>
+            <i>WAFR 2020</i><br>
             <a href="https://arxiv.org/abs/1905.12888">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 A unified theoretical framework for imitation learning! Turns out some SOTA algorithms are using
                 f-divergence. We show how different divergence measures lead to different imitation learning approaches.
@@ -401,11 +480,11 @@
           <p>
             <b>Liyiming Ke</b>, Xiujun Li, Yonatan Bisk, Ari Holtzman, Zhe Gan, Jingjing Liu, Jianfeng Gao, Yejin Choi,
             Siddhartha Srinivasa<br>
-            <i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019</i><br>
+            <i>CVPR 2019</i>
             <font color="49bf9"><i>&#9733; Oral Presentation, CVPR (5.6%) &#9733;</i></font><br>
             <a href="https://arxiv.org/abs/1903.02547">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 Baking Search and Planning into ML-based navigation: We propose a new framework for VL navigation,
                 enabling agents to recover from mistakes by maintaining internal search tree and returning to previous
@@ -426,10 +505,10 @@
               Evasion</a></h3>
           <p>
             <b>Liyiming Ke</b>, Bo Li, Yevgeniy Vorobeychik<br>
-            <i>AAAI Conference on Artificial Intelligence (AAAI) 2016</i><br>
+            <i>AAAI 2016</i><br>
             <a href="https://ojs.aaai.org/index.php/AAAI/article/view/10061">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
-              <a href="#">Summary</a>
+              <a href="#" onclick="event.preventDefault();">Summary</a>
               <span class="excerpt-content">
                 Studies how humans attempt to evade email spam filters.
                 Provides insights into adversarial behavior and implications for security system design.
@@ -443,6 +522,14 @@
       <!-- <div class="list-item talk description" data-category="talk">
           Some of my slides can be found <a href="https://slides.com/andyzeng">here</a>
         </div> -->
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date">2025</p>RSS Workshop (upcoming)
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date"></p>Actuate (upcoming)
+      </div>
 
       <div class="list-item talk" data-category="talk">
         <p class="date">2024</p>OpenAI Reading Group
@@ -471,7 +558,8 @@
       </div>
 
       <div class="list-item talk" data-category="talk">
-        <p class="date"></p>Stanford University, <a href="https://iprl.stanford.edu/">Interactive Perception and Robot
+        <p class="date"></p>Stanford University, <a href="https://iprl.stanford.edu/">Interactive Perception and
+          Robot
           Learning Lab</a>
       </div>
 
@@ -498,7 +586,18 @@
 
 
       <div class="list-item misc" data-category="misc">
-        <p class="date"> </p>Reviewer of AAMAS, CoRL, HRI, ICLR, ICRA, IJRR, IROS, NeurIPS, RA-L
+        <p class="date"> </p>Reviewer of RSS, CoRL, ICLR, NeurIPS, ICRA, IJRR, IROS, RA-L, HRI, AAMAS, IJCAI
+      </div>
+
+      <div class="list-item misc" data-category="misc">
+        <p class="date">2025</p>We <a href="https://github.com/Physical-Intelligence/openpi">open source
+          &#960; 0 on Github</a> to empower the community by sharing our foundation models.
+      </div>
+
+      <div class="list-item misc" data-category="misc">
+        <p class="date">2024</p>Our first generalist robotic model, &#960; 0,
+        is featured on <a href="https://www.nytimes.com/2024/11/04/business/dealbook/selzer-poll-trump-trade.html">
+          New York Times</a> and <a href="https://www.wired.com/story/physical-intelligence-home-robot/"> Wired</a>.
       </div>
 
       <div class="list-item misc" data-category="misc">
@@ -538,6 +637,7 @@
           <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
           <li style="display: inline;"><a href="https://colah.github.io/">Colah's Blog</a></li>
           <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
+          <!--
           <li style="display: inline;"><a href="http://neuralnetworksanddeeplearning.com/">Michael Nielsen</a></li>
           <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
           <li style="display: inline;"><a href="https://karpathy.github.io/">Andrej Karpathy</a></li>
@@ -545,6 +645,7 @@
           <li style="display: inline;"><a href="https://danielseita.github.io/">Seita's Place</a></li>
           <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
           <li style="display: inline;"><a href="https://www.ruder.io/">Sebastian Ruder</a></li>
+          -->
         </ul>
       </div>
 
