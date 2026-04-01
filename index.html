@@ -1,31 +1,21 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
   <!-- Google analytics tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRYQ3GG5Y8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-STGLQW4BJX');
-
-    function toggleExcerpt(elementId) {
-      const excerptDiv = document.getElementById(elementId);
-      if (excerptDiv.style.display === "none") {
-        excerptDiv.style.display = "block";
-      } else {
-        excerptDiv.style.display = "none";
-      }
-    }
+    gtag('config', 'G-WRYQ3GG5Y8');
   </script>
 
   <link rel="icon" type="image/png" href="images/favicon.png" />
 
-  <!-- Title -->
   <title>Kay - Physical Intelligence</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=1000">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Isotope JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -41,9 +31,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-  </style>
 </head>
 
 <body id="body">
@@ -61,12 +48,8 @@
           Meta AI, Microsoft Research, and Google Search along the way. I’m driven by curiosity and currently I aim to
           design robot policies that master Robustness, Precision, and Dexterity.
           <br><br>
-          <!-- In PhD program:
-            Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a final-year grad student at University of Washington, advised by [Siddhartha Srinivasa](https://goodrobot.ai/). I research on Robotics :robot: Learning, with a focus on **Data-Driven Fine Manipulation**.
-            As a test-bed for pushing the limit of fine manipulation, I built [a chopsticks robot](https://goodcherrybot.github.io/) to showcase the _precision_ and _dynamic reactivity_ of systems trained via reinforcement learning. I have also developed theories like [f-divergence framework for imitation learning and adversarial imitation learning](https://arxiv.org/abs/1905.12888) and [leveraging local-continuity in dynamics](https://arxiv.org/pdf/2310.12972).
-            I was very fortunate to work with [Abhishek Gupta](https://homes.cs.washington.edu/~abhgupta/), [Tapomayukh Bhattacharjee](https://robotics.cornell.edu/faculty/tapomayukh-bhattacharjee-bio/), [Byron Boots](https://homes.cs.washington.edu/~bboots/) and [Sanjiban Choudary](https://sanjibanchoudhury.com/).
-          -->
-        <div id="more-bio" style="display: None">
+
+        <div id="more-bio" style="display: none;">
           <br>
           <p>Liyiming Ke is a full stack robotist at Physical Intelligence researching on Machine Learning for Robot
             Manipulation. She earned her Ph.D. from the University of Washington with her thesis titled "Data-driven
@@ -81,17 +64,16 @@
         <a href="https://www.linkedin.com/in/kelym/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://x.com/xkelym">Twitter</a>
         <br><br>
-        kay at workplace dot company
+        kay at physical intelligence dot company
         <br><br>
         </p>
       </div>
       <div id="intro-image">
-        <img src="images/profile.jpg">
+        <img src="images/profile.jpg" alt="Portrait of Liyiming Ke">
       </div>
     </div>
 
     <div id="filters" class="button-group">
-      <!-- <button class="button" data-filter="*">Show All</button> -->
       <button class="button is-checked" data-filter=".highlight">Highlights</button>
       <button class="button" data-filter=".publication">Research</button>
       <button class="button" data-filter=".talk">Talks</button>
@@ -100,79 +82,128 @@
 
     <div class="grid">
 
-      <!-- Highlights -->
       <div class="list-item highlight description" data-category="highlight">
-        <!-- Some recent highlights from our research:-->
       </div>
 
-      <!-- Preview Videos -->
+      <!-- Highlights row 1 -->
       <div class="list-item highlight previews" data-category="highlight">
 
-        <a href="https://www.pi.website/research/rlt"><video class="preview1" playsinline="" muted="" autoplay="" loop="">
-            <source src="images/20260317-screw.mp4" type="video/mp4">
-          </video></a>
-
-        <a href="https://www.pi.website/research/rlt"><video class="preview2" playsinline="" muted="" autoplay="" loop="">
-            <source src="images/20260317-ziptie.mp4" type="video/mp4">
-          </video></a>
-
-        <a href="https://www.pi.website/blog/pistar06"><video class="preview3" playsinline="" muted="" autoplay="" loop="">
-            <source src="images/20251118-pi06.mp4" type="video/mp4">
-          </video></a>
-
-      </div>
-      <div class="list-item highlight previews" data-category="highlight">
-
-
-          <div class="hover-video preview1">
-            <a href="https://goodcherrybot.github.io/">
-              <video playsinline muted autoplay loop>
-                <source src="images/20250330-pi05-makebed.mp4" type="video/mp4">
-              </video>
-              <div class="hover-caption">
-                Robot foundation model can generalize household chores across different real homes.
-              </div>
-            </a>
-          </div>
-
-        <a href="https://www.pi.website/blog/pi05"><video class="preview2" playsinline="" muted="" autoplay="" loop="">
-            <source src="images/20250330-pi05-putsink.mp4" type="video/mp4">
-          </video></a>
-
-        <a href="https://www.physicalintelligence.company/research/hirobot"><video class="preview3" playsinline="" muted="" autoplay="" loop="">
-            <source src="images/20250110-hirobot.mp4" type="video/mp4">
-          </video></a>
-
-      </div>
-      <div class="list-item highlight previews" data-category="highlight">
-
-        <a href="https://personalrobotics.github.io/CCIL/"><video class="preview1" playsinline="" muted="" autoplay=""
-            loop="">
-            <source src="images/20241101-ccil-applied.mp4" type="video/mp4">
-          </video></a>
-
-        <a href="https://www.physicalintelligence.company/blog/pi0"><video class="preview2" playsinline="" muted=""
-            autoplay="" loop="">
-            <source src="images/20241101-pizero_bussing_trashpile.mp4" type="video/mp4">
-          </video></a>
-
-        <a href="https://goodcherrybot.github.io/"><video class="preview3" playsinline="" muted="" autoplay="" loop="">
-            <source src="images/20230315-cherrybot-granola_retry.mp4" type="video/mp4">
-          </video></a>
-
-      </div>
-
-      <!-- Truncated Set of Highlights (Shown by Default) -->
-      <div id="main-highlights">
-        <!--
-        <div class="list-item highlight" data-category="highlight">
-          <b>some place</b> <a href="some link">some award</a>
+        <div class="hover-video preview1">
+          <a href="https://www.pi.website/research/rlt">
+            <video playsinline muted autoplay loop>
+              <source src="images/20260317-screw.mp4" type="video/mp4">
+            </video>
+            <div class="hover-caption">
+              RL Tokens connect a VLA to online RL for fast adaptation on fine manipulation tasks.
+            </div>
+          </a>
         </div>
-        -->
+
+        <div class="hover-video preview2">
+          <a href="https://www.pi.website/research/rlt">
+            <video playsinline muted autoplay loop>
+              <source src="images/20260317-ziptie.mp4" type="video/mp4">
+            </video>
+            <div class="hover-caption">
+              RL Tokens let robots improve fine motor skills from minutes to hours of real-world experience.
+            </div>
+          </a>
+        </div>
+
+        <div class="hover-video preview3">
+          <a href="https://www.pi.website/blog/pistar06">
+            <video playsinline muted autoplay loop>
+              <source src="images/20251118-pi06.mp4" type="video/mp4">
+            </video>
+            <div class="hover-caption">
+              π*0.6 improves VLA model during deployment using autonomous rollouts and human coaching.
+            </div>
+          </a>
+        </div>
+
       </div>
 
-      <!-- All Archived Highlights (Click to Show) -->
-      <div id="more-highlights" style="display: None">
+      <!-- Highlights row 2 -->
+      <div class="list-item highlight previews" data-category="highlight">
+
+        <div class="hover-video preview1">
+          <a href="https://www.pi.website/blog/pi05">
+            <video playsinline muted autoplay loop>
+              <source src="images/20250330-pi05-makebed.mp4" type="video/mp4">
+            </video>
+            <div class="hover-caption">
+              π0.5 generalizes household chores across different real homes and layouts.
+            </div>
+          </a>
+        </div>
+
+        <div class="hover-video preview2">
+          <a href="https://www.pi.website/blog/pi05">
+            <video playsinline muted autoplay loop>
+              <source src="images/20250330-pi05-putsink.mp4" type="video/mp4">
+            </video>
+            <div class="hover-caption">
+              π0.5 performs open-world household tasks in unfamiliar environments.
+            </div>
+          </a>
+        </div>
+
+        <div class="hover-video preview3">
+          <a href="https://www.physicalintelligence.company/research/hirobot">
+            <video playsinline muted autoplay loop>
+              <source src="images/20250110-hirobot.mp4" type="video/mp4">
+            </video>
+            <div class="hover-caption">
+              A hierarchical VLA reasons through long-horizon instructions and executes them step by step.
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Highlights row 3 -->
+      <div class="list-item highlight previews" data-category="highlight">
+
+        <div class="hover-video preview1">
+          <a href="https://personalrobotics.github.io/CCIL/">
+            <video playsinline muted autoplay loop>
+              <source src="images/20241101-ccil-applied.mp4" type="video/mp4">
+            </video>
+            <div class="hover-caption">
+              CCIL boosts imitation learning robustness with synthetic corrective labels derived from continuity.
+            </div>
+          </a>
+        </div>
+
+        <div class="hover-video preview2">
+          <a href="https://www.physicalintelligence.company/blog/pi0">
+            <video playsinline muted autoplay loop>
+              <source src="images/20241101-pizero_bussing_trashpile.mp4" type="video/mp4">
+            </video>
+            <div class="hover-caption">
+              π0 shows that large-scale cross-embodiment pretraining can transfer across robots and tasks.
+            </div>
+          </a>
+        </div>
+
+        <div class="hover-video preview3">
+          <a href="https://goodcherrybot.github.io/">
+            <video playsinline muted autoplay loop>
+              <source src="images/20230315-cherrybot-granola_retry.mp4" type="video/mp4">
+            </video>
+            <div class="hover-caption">
+              Reinforcement learning enables chopsticks robot to do precise manipulation under disturbances.
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div id="main-highlights">
+      </div>
+
+<!--
+      <div id="more-highlights" style="display: none;">
 
         <div class="list-item highlight" data-category="highlight">
           <p class="date">2024</p> <a href="https://personalrobotics.github.io/CCIL/">Can we improve robustness of
@@ -194,27 +225,19 @@
             of
             divergence minimization</a>
         </div>
-
-        <!-- <div class="list-item highlight" data-category="highlight">
-          <p class="date">Year</p> Stuff <a href="link">link</a>
-        </div> -->
-
       </div>
 
-      <!-- Toggle highlights button. -->
+
       <div class="list-item highlight toggle-button" data-category="highlight">
         <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
       </div>
-
-
-
+-->
 
       <!-- Publications -->
 
-
       <div class="list-item publication" data-category="publication">
         <a href="https://www.pi.website/research/rlt" class="thumbnail">
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+          <video playsinline muted autoplay loop width="180">
             <source src="images/20260317-screw.mp4" type="video/mp4">
           </video>
         </a>
@@ -222,7 +245,6 @@
           <h3><a href="https://www.pi.website/research/rlt">RL Token: Bootstrapping Online RL with Vision-Language-Action Models</a></h3>
           <p>
             Charles Xu, Jost Tobias Springenberg, Michael Equi, Ali Amin, Adnan Esmail, Sergey Levine, <b>Liyiming Ke</b><br>
-            <!--<i>Research Blog / 2026</i><br>-->
             <a href="https://www.pi.website/research/rlt">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://www.pi.website/download/rlt.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
@@ -239,13 +261,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://arxiv.org/abs/2511.14759" class="thumbnail">
-          <!-- replace with your actual teaser image/video file -->
-          <img src="images/20251118-pi06.jpg" alt="" />
-          <!-- or use video instead:
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
-            <source src="images/20251118-pi06.mp4" type="video/mp4">
-          </video>
-          -->
+          <img src="images/20251118-pi06.jpg" alt="π*0.6 teaser image" />
         </a>
         <div class="project-description">
           <h3><a href="https://www.pi.website/blog/pistar06">&#960;<sup>*</sup><sub>0.6</sub>: a VLA That Learns From Experience</a></h3>
@@ -259,7 +275,6 @@
             Allen Z. Ren, Charvi Sharma, Lucy Xiaoyang Shi, Laura Smith, Jost Tobias Springenberg,
             Kyle Stachowicz, Will Stoeckle, Alex Swerdlow, James Tanner, Marcel Torne, Quan Vuong,
             Anna Walling, Haohuan Wang, Blake Williams, Sukwon Yoo, Lili Yu, Ury Zhilinsky, Zhiyuan Zhou<br>
-            <!--<i>Conference / Year</i><br>-->
             <a href="https://www.pi.website/blog/pistar06">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://arxiv.org/abs/2511.14759">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
@@ -274,7 +289,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://www.pi.website/blog/pi05" class="thumbnail">
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+          <video playsinline muted autoplay loop width="180">
             <source src="images/20250330-pi05-makebed.mp4" type="video/mp4">
           </video>
         </a>
@@ -287,7 +302,6 @@
             Jakubczak, Tim Jones, <b>Liyiming Ke</b>, Devin LeBlanc, Sergey Levine, Adrian Li-Bell, Mohith Mothukuri,
             Suraj Nair, Karl Pertsch, Allen Z Ren, Lucy Xiaoyang Shi, Laura Smith, Jost Tobias Springenberg, Kyle
             Stachowicz, James Tanner, Quan Vuong, Homer Walke, Anna Walling, Haohuan Wang, Lili Yu, Ury Zhilinsky<br>
-            <!--<i>CoRL 2025</i><br>-->
             <a href="https://www.pi.website/blog/pi05">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <a href="https://www.physicalintelligence.company/download/pi05.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
             <span class="excerpt-container">
@@ -301,10 +315,9 @@
         </div>
       </div>
 
-
       <div class="list-item publication" data-category="publication">
         <a href="https://www.physicalintelligence.company/research/hirobot" class="thumbnail">
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+          <video playsinline muted autoplay loop width="180">
             <source src="images/20250110-hirobot.mp4" type="video/mp4">
           </video>
         </a>
@@ -340,7 +353,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://www.physicalintelligence.company/blog/pi0" class="thumbnail">
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+          <video playsinline muted autoplay loop width="180">
             <source src="images/20241101-pizero.mp4" type="video/mp4">
           </video>
         </a>
@@ -370,7 +383,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://arxiv.org/abs/2410.20254" class="thumbnail">
-          <img src="images/20241101-sim2real.jpg" alt="" />
+          <img src="images/20241101-sim2real.jpg" alt="Sim-to-real exploration teaser image" />
         </a>
         <div class="project-description">
           <h3><a href="https://arxiv.org/abs/2410.20254">Overcoming the Sim-to-Real Gap: Leveraging Simulation to Learn
@@ -393,7 +406,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://arxiv.org/abs/2405.19307" class="thumbnail">
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+          <video playsinline muted autoplay loop width="180">
             <source src="images/20241101-ccil-applied.mp4" type="video/mp4">
           </video>
         </a>
@@ -417,11 +430,11 @@
       </div>
 
       <div class="list-item publication" data-category="publication">
-        <a href="https://arxiv.org/abs/2310.12972v1" class="thumbnail">
-          <img src="images/20231019-ccil.png" alt="" />
+        <a href="https://personalrobotics.github.io/CCIL/" class="thumbnail">
+          <img src="images/20231019-ccil.png" alt="CCIL teaser image" />
         </a>
         <div class="project-description">
-          <h3><a href="https://arxiv.org/abs/2310.12972v1">CCIL: Continuity-based Data Augmentation for Corrective
+          <h3><a href="https://personalrobotics.github.io/CCIL/">CCIL: Continuity-based Data Augmentation for Corrective
               Imitation Learning</a></h3>
           <p>
             <b>Liyiming Ke*</b>, Yunchu Zhang*, Abhay Deshpande, Siddhartha Srinivasa, Abhishek Gupta<br>
@@ -443,7 +456,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://goodcherrybot.github.io/" class="thumbnail">
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+          <video playsinline muted autoplay loop width="180">
             <source src="images/20230315-cherry-picking.mp4" type="video/mp4">
           </video>
         </a>
@@ -467,7 +480,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://sites.google.com/view/real-orl" class="thumbnail">
-          <img src="images/20220930-real-offlinerl.png" alt="" />
+          <img src="images/20220930-real-offlinerl.png" alt="Real-world offline RL teaser image" />
         </a>
         <div class="project-description">
           <h3><a href="https://sites.google.com/view/real-orl">Real World Offline Reinforcement Learning with Realistic
@@ -489,7 +502,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://personalrobotics.cs.washington.edu/publications/ke2021grasping.pdf" class="thumbnail">
-          <img src="images/20201101-chopsticks-grasping.jpg" alt="" />
+          <img src="images/20201101-chopsticks-grasping.jpg" alt="Grasping with chopsticks teaser image" />
         </a>
         <div class="project-description">
           <h3><a href="https://personalrobotics.cs.washington.edu/publications/ke2021grasping.pdf">Grasping with
@@ -512,7 +525,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://personalrobotics.cs.washington.edu/publications/ke2020teleop.pdf" class="thumbnail">
-          <img src="images/20200630-chopsticks-teleop.gif" alt="" />
+          <img src="images/20200630-chopsticks-teleop.gif" alt="Telemanipulation with chopsticks teaser image" />
         </a>
         <div class="project-description">
           <h3><a href="https://personalrobotics.cs.washington.edu/publications/ke2020teleop.pdf">Telemanipulation with
@@ -536,7 +549,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://arxiv.org/abs/1905.12888" class="thumbnail">
-          <img src="images/20190608-fimitation-teaser.png" alt="" />
+          <img src="images/20190608-fimitation-teaser.png" alt="f-divergence imitation learning teaser image" />
         </a>
         <div class="project-description">
           <h3><a href="https://arxiv.org/abs/1905.12888">Imitation Learning as f-Divergence Minimization</a></h3>
@@ -558,7 +571,7 @@
       <div class="list-item publication" data-category="publication">
         <a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Ke_Tactical_Rewind_Self-Correction_via_Backtracking_in_Vision-And-Language_Navigation_CVPR_2019_paper.html"
           class="thumbnail">
-          <img src="images/20190607-vln-teaser.png" alt="" />
+          <img src="images/20190607-vln-teaser.png" alt="Tactical Rewind teaser image" />
         </a>
         <div class="project-description">
           <h3><a
@@ -585,7 +598,7 @@
 
       <div class="list-item publication" data-category="publication">
         <a href="https://ojs.aaai.org/index.php/AAAI/article/view/10061" class="thumbnail">
-          <img src="images/20160101-email-teaser.png" alt="" />
+          <img src="images/20160101-email-teaser.png" alt="Email filter evasion teaser image" />
         </a>
         <div class="project-description">
           <h3><a href="https://ojs.aaai.org/index.php/AAAI/article/view/10061">Behavioral Experiments in Email Filter
@@ -606,16 +619,16 @@
       </div>
 
       <!-- Talks -->
-      <!-- <div class="list-item talk description" data-category="talk">
-          Some of my slides can be found <a href="https://slides.com/andyzeng">here</a>
-        </div> -->
-
       <div class="list-item talk" data-category="talk">
-        <p class="date">2025</p>RSS Workshop (upcoming)
+        <p class="date">2026</p>Upcoming<a href=""></a>
       </div>
 
       <div class="list-item talk" data-category="talk">
-        <p class="date"></p>Actuate (upcoming)
+        <p class="date">2025</p>RSS Workshop <a href="https://wcbm-workshop.github.io/">WCBM</a> and <a href="https://hitl-robot-learning.github.io/">HILT</a>
+      </div>
+
+      <div class="list-item talk" data-category="talk">
+        <p class="date"></p>Actuate SF (<a href="https://www.youtube.com/watch?v=s4go3bAB1q8">recording</a>)
       </div>
 
       <div class="list-item talk" data-category="talk">
@@ -668,12 +681,14 @@
         <p class="date">2018</p>Microsoft Research Dialogue Group Reading Group
       </div>
 
-
-      <!-- Services -->
+      <!-- Misc -->
+      <div class="list-item misc" data-category="misc">
+        <p class="date"> </p>Reviewer of RSS, CoRL, ICLR, NeurIPS, ICRA, IJRR, IROS, RA-L, HRI, AAMAS, IJCAI
+      </div>
 
 
       <div class="list-item misc" data-category="misc">
-        <p class="date"> </p>Reviewer of RSS, CoRL, ICLR, NeurIPS, ICRA, IJRR, IROS, RA-L, HRI, AAMAS, IJCAI
+        <p class="date">2025</p>I joined a podcast panel, <a href="https://www.youtube.com/watch?v=FjC9qGPC7MA">硅谷101</a>, to chat about robot foundation model.
       </div>
 
       <div class="list-item misc" data-category="misc">
@@ -724,19 +739,11 @@
           <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
           <li style="display: inline;"><a href="https://colah.github.io/">Colah's Blog</a></li>
           <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
-          <!--
-          <li style="display: inline;"><a href="http://neuralnetworksanddeeplearning.com/">Michael Nielsen</a></li>
-          <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
-          <li style="display: inline;"><a href="https://karpathy.github.io/">Andrej Karpathy</a></li>
-          <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
-          <li style="display: inline;"><a href="https://danielseita.github.io/">Seita's Place</a></li>
-          <li style="display: inline;">&nbsp;&bull;&nbsp;</li>
-          <li style="display: inline;"><a href="https://www.ruder.io/">Sebastian Ruder</a></li>
-          -->
         </ul>
       </div>
 
     </div>
+
     <div id="footer">
       Website template by <a href="https://andyzeng.github.io/">Andy Zeng</a> and <a
         href="https://jonbarron.info/">Jon's
@@ -746,8 +753,6 @@
   </div>
 
   <script>
-
-    // Isotope grid.
     var $grid = $('.grid').isotope({
       itemSelector: '.list-item',
       layoutMode: 'fitRows',
@@ -766,14 +771,12 @@
       }
     });
 
-    // Bind filter button click.
     $('#filters').on('click', 'button', function () {
       var filterValue = $(this).attr('data-filter');
       localStorage.setItem('filterValue', filterValue);
       $grid.isotope({ filter: filterValue });
     });
 
-    // Change is-checked class on buttons.
     $('.button-group').each(function (i, buttonGroup) {
       var $buttonGroup = $(buttonGroup);
       $buttonGroup.on('click', 'button', function () {
@@ -783,10 +786,9 @@
     });
 
     function update_isotope() {
-      // Retrieve cached button click.
       var defaultFilterValue = localStorage.getItem('filterValue');
       if (defaultFilterValue == null) {
-        defaultFilterValue = ".highlight"
+        defaultFilterValue = ".highlight";
       }
       $grid.isotope({ filter: defaultFilterValue });
       var buttons = document.getElementsByClassName("button");
@@ -811,22 +813,21 @@
     function toggle_highlights() {
       var x = document.getElementById("main-highlights");
       var y = document.getElementById("more-highlights");
-      var b = document.getElementById("toggle_highlights_button")
+      var b = document.getElementById("toggle_highlights_button");
       if (y.style.display === "none") {
         x.style.display = "none";
         y.style.display = "block";
-        b.innerHTML = "Show less"
+        b.innerHTML = "Show less";
         update_isotope();
       } else {
         x.style.display = "block";
         y.style.display = "none";
-        b.innerHTML = "Show more"
+        b.innerHTML = "Show more";
         update_isotope();
       }
     }
 
     update_isotope();
-
   </script>
 </body>
 
