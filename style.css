@@ -426,3 +426,41 @@ h3 a:hover {
   align-items: center;
   justify-content: center;
 }
+
+.hover-video {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-video a {
+  display: block;
+  position: relative;
+}
+
+.hover-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hover-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.hover-video:hover .hover-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
